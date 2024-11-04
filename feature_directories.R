@@ -39,10 +39,10 @@ process_directory <- function(dir_path, lab_name) {
 
 # Definir los directorios de los laboratorios
 lab_directories <- list(
-  Demengeot = "~/Tooling_up/RawData/Demengeot",
-  Howard = "~/Tooling_up/RawData/Howard",
-  HowardNew = "~/Tooling_up/RawData/HowardNew",
-  Vilanova = "~/Tooling_up/RawData/Vilanova"
+  Demengeot = "/home/paulinapg/tooling_up_systems_bio/RawData/Demengeot",
+  Howard = "/home/paulinapg/tooling_up_systems_bio/RawData/Howard",
+  HowardNew = "/home/paulinapg/tooling_up_systems_bio/RawData/HowardNew",
+  Vilanova = "/home/paulinapg/tooling_up_systems_bio/RawData/Vilanova"
 )
 
 # Procesar todos los directorios y combinarlos en una sola tabla
@@ -51,5 +51,6 @@ combined_data <- do.call(rbind, lapply(names(lab_directories), function(lab) {
 }))
 
 # Ver los primeros resultados
-print(combined_data)
 View(combined_data)
+
+#
