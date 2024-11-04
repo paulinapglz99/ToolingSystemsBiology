@@ -1,5 +1,6 @@
 #Script for extract features of the csv
 
+setwd("~/tooling_up_systems_bio/ToolingSystemsBiology/")
 # Cargar las librerías necesarias
 library(dplyr)
 library(stringr)
@@ -53,4 +54,34 @@ combined_data <- do.call(rbind, lapply(names(lab_directories), function(lab) {
 # Ver los primeros resultados
 View(combined_data)
 
-#
+unique(combined_data$Plate)
+unique(combined_data$Date)
+
+# # Normalizar los valores en la columna Plate
+combined_data$Plate <- ifelse(grepl("^P[0-9]+$", combined_data$Plate),
+                              paste0("plate_", sub("^P", "", combined_data$Plate)),
+                              combined_data$Plate)
+
+unique(combined_data$Plate)
+
+#Ahora quiero normalizar los datos 
+# Convertir fechas al formato "YYYY-MM-DD" usando diferentes formatos según el caso
+combined_data$Date <- ifelse(grepl("^[0-9]{4}-[0-9]{2}-[0-9]{2}$", combined_data$Date),
+                             as.Date(combined_data$Date, format = "%Y-%m-%d"),
+                             as.Date(combined_data$Date, format = "%a %b %d %Y"))
+
+# Convertir a Date para manejar los NA resultantes de conversiones fallidas
+combined_data$Date <- as.Date(combined_data$Date, origin = "1970-01-01")
+
+# Verificar el resultado
+unique(combined_data$Date)
+
+#unique identifier 
+
+combined_data$date_lab_plate <- paste(combined_data$Date, combined_data$Lab, combined_data$Plate, sep = "_")
+
+combined_data <- combined_data %>% dplyr::select("date_lab_plate", "Title", "Date", "Lab", "Plate")
+
+#Save data
+
+vroom::vroom_write(combined_data, "~/tooling_up_systems_bio/ToolingSystemsBiology/normalized_dictionariy.csv")
