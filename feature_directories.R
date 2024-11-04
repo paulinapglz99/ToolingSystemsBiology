@@ -27,7 +27,7 @@ extract_info <- function(filepath, lab_name) {
   plate <- str_extract(file_name, "P\\d+|plate_\\d+")
   
   # Crear un data frame con la información
-  return(data.frame(Title = title, Date = date, Lab = lab_name, Plate = plate, stringsAsFactors = FALSE))
+  return(data.frame(file_name = title, Date = date, Lab = lab_name, Plate = plate, stringsAsFactors = FALSE))
 }
 
 # Función para recorrer un directorio y procesar sus archivos
@@ -44,9 +44,9 @@ process_directory <- function(dir_path, lab_name) {
 # Definir los directorios de los laboratorios
 lab_directories <- list(
   Demengeot = paste0(dir, "/RawData/Demengeot"),
-  Howard = paste0(dir,"RawData/Howard"),
-  HowardNew = paste0(dir,"RawData/HowardNew"),
-  Vilanova = paste0(dir,"RawData/Vilanova")
+  Howard = paste0(dir,"/RawData/Howard"),
+  HowardNew = paste0(dir,"/RawData/HowardNew"),
+  Vilanova = paste0(dir,"/RawData/Vilanova")
 )
 
 # Procesar todos los directorios y combinarlos en una sola tabla
@@ -55,8 +55,6 @@ combined_data <- do.call(rbind, lapply(names(lab_directories), function(lab) {
 }))
 
 # Ver los primeros resultados
-View(combined_data)
-
 unique(combined_data$Plate)
 unique(combined_data$Date)
 
@@ -85,8 +83,40 @@ combined_data$date_lab_plate <- paste(combined_data$Date, combined_data$Lab, com
 
 combined_data <- combined_data %>% dplyr::select("date_lab_plate", "Title", "Date", "Lab", "Plate")
 
+# Cargar los datos nuevamente en caso de que combined_data no esté actualizado
+# library(dplyr)
+# combined_data <- #... tu código previo
+
+# Función para calcular media y desviación estándar de la última fila (sin contar "dilution")
+calculate_last_row_stats <- function(filepath) {
+  # Leer el archivo CSV
+  data <- read.csv(filepath)
+  
+  # Obtener la última fila sin la columna 'dilution'
+  last_row <- data[nrow(data), -ncol(data)]
+  
+  # Calcular media y desviación estándar
+  mean_value <- mean(as.numeric(last_row), na.rm = TRUE)
+  sd_value <- sd(as.numeric(last_row), na.rm = TRUE)
+  
+  return(list(mean = mean_value, sd = sd_value))
+}
+
+# Aplicar la función a cada archivo y actualizar `combined_data`
+combined_data <- combined_data %>%
+  rowwise() %>%
+  mutate(
+    stats = list(calculate_last_row_stats(paste0(dir, "/RawData/", Lab, "/", Title, ".csv"))),
+    background_mean = stats$mean,
+    background_SD = stats$sd
+  ) %>%
+  select(-stats) %>%
+  ungroup()
+
+# Verifica los resultados
+View(combined_data)
+
 #Save data
 
-vroom::vroom_write(combined_data, "~/tooling_up_systems_bio/ToolingSystemsBiology/normalized_dictionary.csv")
-
+vroom::vroom_write(combined_data, "~/tooling_up_systems_bio/ToolingSystemsBiology/data.csv")
 #END
