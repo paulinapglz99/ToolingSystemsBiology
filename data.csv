@@ -1,249 +1,706 @@
-Title	Date	Lab	Plate	date_lab_plate	background_mean	background_SD
-2023-01-11 plate_1	2023-01-11	Demengeot	plate_1	2023-01-11_Demengeot_plate_1	2.2415	0.09982413106487407
-2023-01-11 plate_2	2023-01-11	Demengeot	plate_2	2023-01-11_Demengeot_plate_2	2.5395	0.09470103333272399
-2023-01-11 plate_3	2023-01-11	Demengeot	plate_3	2023-01-11_Demengeot_plate_3	2.251125	0.12224499697621276
-2023-01-11 plate_4	2023-01-11	Demengeot	plate_4	2023-01-11_Demengeot_plate_4	2.2775	0.05274195944136206
-2023-01-11 plate_5	2023-01-11	Demengeot	plate_5	2023-01-11_Demengeot_plate_5	1.349875	0.10961939022949231
-2023-01-17 plate_1	2023-01-17	Demengeot	plate_1	2023-01-17_Demengeot_plate_1	2.174375	0.07474707352130926
-2023-01-17 plate_2	2023-01-17	Demengeot	plate_2	2023-01-17_Demengeot_plate_2	1.808875	0.09534963854901901
-2023-01-17 plate_3	2023-01-17	Demengeot	plate_3	2023-01-17_Demengeot_plate_3	2.51525	0.13858751747542053
-2023-01-17 plate_4	2023-01-17	Demengeot	plate_4	2023-01-17_Demengeot_plate_4	1.75275	0.0745879155283022
-2023-01-17 plate_5	2023-01-17	Demengeot	plate_5	2023-01-17_Demengeot_plate_5	2.316	0.1214260503939978
-2023-01-17 plate_6	2023-01-17	Demengeot	plate_6	2023-01-17_Demengeot_plate_6	2.3725	0.06501428414477191
-2023-01-24 plate_1	2023-01-24	Demengeot	plate_1	2023-01-24_Demengeot_plate_1	1.84025	0.06581738806294708
-2023-01-24 plate_2	2023-01-24	Demengeot	plate_2	2023-01-24_Demengeot_plate_2	1.537875	0.06689317176342759
-2023-01-24 plate_3	2023-01-24	Demengeot	plate_3	2023-01-24_Demengeot_plate_3	1.9865	0.11008308550492996
-2023-01-24 plate_4	2023-01-24	Demengeot	plate_4	2023-01-24_Demengeot_plate_4	1.637125	0.09669161213436692
-2023-01-24 plate_5	2023-01-24	Demengeot	plate_5	2023-01-24_Demengeot_plate_5	2.4415	0.07056101716144077
-2023-01-24 plate_6	2023-01-24	Demengeot	plate_6	2023-01-24_Demengeot_plate_6	2.530125	0.15205585205067626
-2023-02-14 plate_1	2023-02-14	Demengeot	plate_1	2023-02-14_Demengeot_plate_1	2.6635	0.14221412427342497
-2023-02-14 plate_2	2023-02-14	Demengeot	plate_2	2023-02-14_Demengeot_plate_2	1.252	0.06847940253410928
-2023-02-14 plate_3	2023-02-14	Demengeot	plate_3	2023-02-14_Demengeot_plate_3	2.9865	0.24280385970102353
-2023-02-14 plate_4	2023-02-14	Demengeot	plate_4	2023-02-14_Demengeot_plate_4	2.21775	0.0760671695655509
-2023-03-05 plate_1	2023-03-05	Demengeot	plate_1	2023-03-05_Demengeot_plate_1	2.482	0.0952950306004612
-2023-03-05 plate_2	2023-03-05	Demengeot	plate_2	2023-03-05_Demengeot_plate_2	2.326375	0.12426922099101731
-2023-03-05 plate_3	2023-03-05	Demengeot	plate_3	2023-03-05_Demengeot_plate_3	2.163375	0.06677026177231046
-2023-03-05 plate_4	2023-03-05	Demengeot	plate_4	2023-03-05_Demengeot_plate_4	1.9942499999999999	0.06378031492105198
-2023-03-05 plate_5	2023-03-05	Demengeot	plate_5	2023-03-05_Demengeot_plate_5	2.6785	0.0898522596901635
-2023-03-05 plate_6	2023-03-05	Demengeot	plate_6	2023-03-05_Demengeot_plate_6	1.80175	0.09922233331549625
-2023-03-05 plate_7	2023-03-05	Demengeot	plate_7	2023-03-05_Demengeot_plate_7	2.10575	0.10550118482747006
-2023-03-10 plate_1	2023-03-10	Demengeot	plate_1	2023-03-10_Demengeot_plate_1	1.13025	0.03037738820711407
-2023-03-10 plate_2	2023-03-10	Demengeot	plate_2	2023-03-10_Demengeot_plate_2	1.63825	0.08579169123938686
-2023-03-10 plate_3	2023-03-10	Demengeot	plate_3	2023-03-10_Demengeot_plate_3	1.307875	0.05975052301026325
-2023-03-10 plate_4	2023-03-10	Demengeot	plate_4	2023-03-10_Demengeot_plate_4	2.265375	0.11885277507427885
-2023-03-10 plate_5	2023-03-10	Demengeot	plate_5	2023-03-10_Demengeot_plate_5	1.732	0.07999642849170563
-2023-03-11 plate_1	2023-03-11	Demengeot	plate_1	2023-03-11_Demengeot_plate_1	1.891625	0.09322773575651036
-2023-03-11 plate_2	2023-03-11	Demengeot	plate_2	2023-03-11_Demengeot_plate_2	1.001	0.06624629369686601
-2023-03-11 plate_3	2023-03-11	Demengeot	plate_3	2023-03-11_Demengeot_plate_3	2.112125	0.12453735813573609
-2023-03-11 plate_4	2023-03-11	Demengeot	plate_4	2023-03-11_Demengeot_plate_4	2.0707500000000003	0.12154217375051346
-2023-03-14 plate_1	2023-03-14	Demengeot	plate_1	2023-03-14_Demengeot_plate_1	2.554875	0.1360183154683852
-2023-03-14 plate_2	2023-03-14	Demengeot	plate_2	2023-03-14_Demengeot_plate_2	2.327125	0.13770303192014327
-2023-03-14 plate_3	2023-03-14	Demengeot	plate_3	2023-03-14_Demengeot_plate_3	1.68925	0.13213169837054886
-2023-03-14 plate_4	2023-03-14	Demengeot	plate_4	2023-03-14_Demengeot_plate_4	1.9368750000000001	0.10389752850078506
-2023-03-14 plate_5	2023-03-14	Demengeot	plate_5	2023-03-14_Demengeot_plate_5	1.728875	0.07262317123342936
-2023-03-14 plate_6	2023-03-14	Demengeot	plate_6	2023-03-14_Demengeot_plate_6	1.4833749999999999	0.0787454080293847
-2023-03-14 plate_7	2023-03-14	Demengeot	plate_7	2023-03-14_Demengeot_plate_7	1.830125	0.0869341910379833
-2023-03-14 plate_8	2023-03-14	Demengeot	plate_8	2023-03-14_Demengeot_plate_8	1.2575	0.07422937423958256
-2023-03-15 plate_1	2023-03-15	Demengeot	plate_1	2023-03-15_Demengeot_plate_1	2.006625	0.08490488375655605
-2023-03-15 plate_2	2023-03-15	Demengeot	plate_2	2023-03-15_Demengeot_plate_2	1.895375	0.07503701467561574
-2023-03-15 plate_3	2023-03-15	Demengeot	plate_3	2023-03-15_Demengeot_plate_3	1.07075	0.06393691086867252
-2023-03-15 plate_4	2023-03-15	Demengeot	plate_4	2023-03-15_Demengeot_plate_4	2.07475	0.13515573028388922
-2023-03-15 plate_5	2023-03-15	Demengeot	plate_5	2023-03-15_Demengeot_plate_5	2.2275	0.06793484273289256
-2023-03-31 plate_1	2023-03-31	Demengeot	plate_1	2023-03-31_Demengeot_plate_1	1.729625	0.1071553445104016
-2023-03-31 plate_2	2023-03-31	Demengeot	plate_2	2023-03-31_Demengeot_plate_2	2.495625	0.10011555823147578
-2023-03-31 plate_3	2023-03-31	Demengeot	plate_3	2023-03-31_Demengeot_plate_3	1.749875	0.07733126793218899
-2023-03-31 plate_4	2023-03-31	Demengeot	plate_4	2023-03-31_Demengeot_plate_4	2.4515000000000002	0.11818508486993726
-2023-03-31 plate_5	2023-03-31	Demengeot	plate_5	2023-03-31_Demengeot_plate_5	2.264625	0.07132007831900194
-2023-04-03 plate_1	2023-04-03	Demengeot	plate_1	2023-04-03_Demengeot_plate_1	1.364875	0.05146826345290019
-2023-04-03 plate_2	2023-04-03	Demengeot	plate_2	2023-04-03_Demengeot_plate_2	2.194375	0.13400419769544536
-2023-04-03 plate_3	2023-04-03	Demengeot	plate_3	2023-04-03_Demengeot_plate_3	2.333125	0.14837254029733987
-2023-04-03 plate_4	2023-04-03	Demengeot	plate_4	2023-04-03_Demengeot_plate_4	2.273	0.06720119046564578
-2023-04-03 plate_5	2023-04-03	Demengeot	plate_5	2023-04-03_Demengeot_plate_5	2.154375	0.11023084543681184
-2023-04-03 plate_6	2023-04-03	Demengeot	plate_6	2023-04-03_Demengeot_plate_6	2.2523750000000002	0.07592842023906468
-2023-04-03 plate_7	2023-04-03	Demengeot	plate_7	2023-04-03_Demengeot_plate_7	2.0275	0.1267190367928761
-2023-04-03 plate_8	2023-04-03	Demengeot	plate_8	2023-04-03_Demengeot_plate_8	1.846	0.08432589841120662
-2023-04-10 plate_1	2023-04-10	Demengeot	plate_1	2023-04-10_Demengeot_plate_1	2.010625	0.07161790977122974
-2023-04-10 plate_2	2023-04-10	Demengeot	plate_2	2023-04-10_Demengeot_plate_2	2.015125	0.10330597756180418
-2023-04-10 plate_3	2023-04-10	Demengeot	plate_3	2023-04-10_Demengeot_plate_3	2.029875	0.13431778682342432
-2023-04-10 plate_4	2023-04-10	Demengeot	plate_4	2023-04-10_Demengeot_plate_4	2.360125	0.15722544096206026
-2023-04-10 plate_5	2023-04-10	Demengeot	plate_5	2023-04-10_Demengeot_plate_5	1.941375	0.06718830149023608
-2023-04-10 plate_6	2023-04-10	Demengeot	plate_6	2023-04-10_Demengeot_plate_6	1.72525	0.06164356066474887
-2023-04-10 plate_7	2023-04-10	Demengeot	plate_7	2023-04-10_Demengeot_plate_7	2.588375	0.16293463851671142
-2023-04-10 plate_8	2023-04-10	Demengeot	plate_8	2023-04-10_Demengeot_plate_8	2.133125	0.10380674007844709
-2023-04-15 plate_1	2023-04-15	Demengeot	plate_1	2023-04-15_Demengeot_plate_1	1.7573750000000001	0.05765150846744107
-2023-04-15 plate_2	2023-04-15	Demengeot	plate_2	2023-04-15_Demengeot_plate_2	1.681875	0.08651414004988682
-2023-04-15 plate_3	2023-04-15	Demengeot	plate_3	2023-04-15_Demengeot_plate_3	2.227125	0.06611772509266005
-2023-04-15 plate_4	2023-04-15	Demengeot	plate_4	2023-04-15_Demengeot_plate_4	1.669375	0.05324589186031164
-2023-04-15 plate_5	2023-04-15	Demengeot	plate_5	2023-04-15_Demengeot_plate_5	1.735125	0.0804601720462633
-2023-04-15 plate_6	2023-04-15	Demengeot	plate_6	2023-04-15_Demengeot_plate_6	1.883875	0.0753438546171579
-2023-04-20 plate_1	2023-04-20	Demengeot	plate_1	2023-04-20_Demengeot_plate_1	2.31075	0.13154548371462352
-2023-04-20 plate_2	2023-04-20	Demengeot	plate_2	2023-04-20_Demengeot_plate_2	2.2865	0.08533798350424873
-2023-04-20 plate_3	2023-04-20	Demengeot	plate_3	2023-04-20_Demengeot_plate_3	2.3217499999999998	0.11894986939283035
-2023-04-20 plate_4	2023-04-20	Demengeot	plate_4	2023-04-20_Demengeot_plate_4	1.8343749999999999	0.13638803623694942
-2023-04-20 plate_5	2023-04-20	Demengeot	plate_5	2023-04-20_Demengeot_plate_5	2.28475	0.12547367396048803
-2023-04-23 plate_1	2023-04-23	Demengeot	plate_1	2023-04-23_Demengeot_plate_1	1.787	0.10291189019183908
-2023-04-23 plate_2	2023-04-23	Demengeot	plate_2	2023-04-23_Demengeot_plate_2	2.249875	0.07256019668425069
-2023-04-23 plate_3	2023-04-23	Demengeot	plate_3	2023-04-23_Demengeot_plate_3	1.93125	0.08688868083440363
-2023-04-23 plate_4	2023-04-23	Demengeot	plate_4	2023-04-23_Demengeot_plate_4	2.3329999999999997	0.11008438321838127
-2023-04-23 plate_5	2023-04-23	Demengeot	plate_5	2023-04-23_Demengeot_plate_5	2.155125	0.14152580531983758
-2023-04-23 plate_6	2023-04-23	Demengeot	plate_6	2023-04-23_Demengeot_plate_6	2.0735	0.13358999107075994
-2023-04-25 plate_1	2023-04-25	Demengeot	plate_1	2023-04-25_Demengeot_plate_1	2.041625	0.09098027651247116
-2023-04-25 plate_2	2023-04-25	Demengeot	plate_2	2023-04-25_Demengeot_plate_2	1.909	0.060832322235563396
-2023-04-25 plate_3	2023-04-25	Demengeot	plate_3	2023-04-25_Demengeot_plate_3	2.0445	0.06762712896041483
-2023-04-25 plate_4	2023-04-25	Demengeot	plate_4	2023-04-25_Demengeot_plate_4	2.203625	0.07753697274756825
-2023-04-29 plate_1	2023-04-29	Demengeot	plate_1	2023-04-29_Demengeot_plate_1	2.178875	0.06415258039571414
-2023-04-29 plate_2	2023-04-29	Demengeot	plate_2	2023-04-29_Demengeot_plate_2	2.355375	0.1328908655358115
-2023-04-29 plate_3	2023-04-29	Demengeot	plate_3	2023-04-29_Demengeot_plate_3	1.407875	0.06321717103988214
-2023-04-29 plate_4	2023-04-29	Demengeot	plate_4	2023-04-29_Demengeot_plate_4	1.310875	0.08049389950265089
-2023-04-29 plate_5	2023-04-29	Demengeot	plate_5	2023-04-29_Demengeot_plate_5	1.855875	0.10474382013819651
-2023-04-29 plate_6	2023-04-29	Demengeot	plate_6	2023-04-29_Demengeot_plate_6	2.441375	0.09464963587583719
-2023-04-29 plate_7	2023-04-29	Demengeot	plate_7	2023-04-29_Demengeot_plate_7	1.42775	0.0998953023348517
-2023-05-03 plate_1	2023-05-03	Demengeot	plate_1	2023-05-03_Demengeot_plate_1	2.201875	0.11151737532779364
-2023-05-03 plate_2	2023-05-03	Demengeot	plate_2	2023-05-03_Demengeot_plate_2	1.70275	0.09675263008606755
-2023-05-03 plate_3	2023-05-03	Demengeot	plate_3	2023-05-03_Demengeot_plate_3	1.8075	0.035022441784824616
-2023-05-03 plate_4	2023-05-03	Demengeot	plate_4	2023-05-03_Demengeot_plate_4	2.151875	0.13157554864031537
-2023-05-03 plate_5	2023-05-03	Demengeot	plate_5	2023-05-03_Demengeot_plate_5	1.807125	0.09482832232137038
-2023-05-16 plate_1	2023-05-16	Demengeot	plate_1	2023-05-16_Demengeot_plate_1	2.5975	0.12644931226158795
-2023-05-16 plate_2	2023-05-16	Demengeot	plate_2	2023-05-16_Demengeot_plate_2	1.5939999999999999	0.07180529228406499
-2023-05-16 plate_3	2023-05-16	Demengeot	plate_3	2023-05-16_Demengeot_plate_3	2.161625	0.07439073963106653
-2023-05-16 plate_4	2023-05-16	Demengeot	plate_4	2023-05-16_Demengeot_plate_4	1.97175	0.09017720649603514
-2023-05-16 plate_5	2023-05-16	Demengeot	plate_5	2023-05-16_Demengeot_plate_5	1.619625	0.05209589372356658
-2023-05-16 plate_6	2023-05-16	Demengeot	plate_6	2023-05-16_Demengeot_plate_6	2.251625	0.08986805804702169
-2023-05-21 plate_1	2023-05-21	Demengeot	plate_1	2023-05-21_Demengeot_plate_1	1.7257500000000001	0.06496757432970474
-2023-05-21 plate_2	2023-05-21	Demengeot	plate_2	2023-05-21_Demengeot_plate_2	3.075375	0.1469284932981249
-2023-05-21 plate_3	2023-05-21	Demengeot	plate_3	2023-05-21_Demengeot_plate_3	1.836625	0.08194760957029627
-2023-05-21 plate_4	2023-05-21	Demengeot	plate_4	2023-05-21_Demengeot_plate_4	1.868125	0.053150561077538405
-2023-05-22 plate_1	2023-05-22	Demengeot	plate_1	2023-05-22_Demengeot_plate_1	2.040875	0.11248801523463992
-2023-05-22 plate_2	2023-05-22	Demengeot	plate_2	2023-05-22_Demengeot_plate_2	1.236	0.07282856582413245
-2023-05-22 plate_3	2023-05-22	Demengeot	plate_3	2023-05-22_Demengeot_plate_3	1.2313749999999999	0.04901293561033512
-2023-05-22 plate_4	2023-05-22	Demengeot	plate_4	2023-05-22_Demengeot_plate_4	2.464125	0.12278719977494165
-2023-05-23 plate_1	2023-05-23	Demengeot	plate_1	2023-05-23_Demengeot_plate_1	2.28725	0.0727907961214878
-2023-05-23 plate_2	2023-05-23	Demengeot	plate_2	2023-05-23_Demengeot_plate_2	1.805375	0.11583724727885611
-2023-05-23 plate_3	2023-05-23	Demengeot	plate_3	2023-05-23_Demengeot_plate_3	1.0345	0.03158209257520108
-2023-05-23 plate_4	2023-05-23	Demengeot	plate_4	2023-05-23_Demengeot_plate_4	2.1965	0.15058362650510368
-2023-05-24 plate_1	2023-05-24	Demengeot	plate_1	2023-05-24_Demengeot_plate_1	1.332	0.026414281851193464
-2023-05-24 plate_2	2023-05-24	Demengeot	plate_2	2023-05-24_Demengeot_plate_2	2.5105	0.10503740830226696
-2023-05-24 plate_3	2023-05-24	Demengeot	plate_3	2023-05-24_Demengeot_plate_3	3.1811249999999998	0.09241125086110603
-2023-05-24 plate_4	2023-05-24	Demengeot	plate_4	2023-05-24_Demengeot_plate_4	1.98225	0.15943359567096083
-2023-05-24 plate_5	2023-05-24	Demengeot	plate_5	2023-05-24_Demengeot_plate_5	2.034	0.09333197277919901
-2023-05-24 plate_6	2023-05-24	Demengeot	plate_6	2023-05-24_Demengeot_plate_6	1.97625	0.08799634732679049
-2023-05-24 plate_7	2023-05-24	Demengeot	plate_7	2023-05-24_Demengeot_plate_7	2.128	0.11919371987291467
-2023-05-24 plate_8	2023-05-24	Demengeot	plate_8	2023-05-24_Demengeot_plate_8	2.239375	0.15792488042465905
-2023-06-07 plate_1	2023-06-07	Demengeot	plate_1	2023-06-07_Demengeot_plate_1	1.936375	0.10651349679735429
-2023-06-07 plate_2	2023-06-07	Demengeot	plate_2	2023-06-07_Demengeot_plate_2	2.13975	0.09246273380588058
-2023-06-07 plate_3	2023-06-07	Demengeot	plate_3	2023-06-07_Demengeot_plate_3	2.182875	0.08321991090735782
-2023-06-07 plate_4	2023-06-07	Demengeot	plate_4	2023-06-07_Demengeot_plate_4	1.97075	0.10432606851323678
-2023-06-07 plate_5	2023-06-07	Demengeot	plate_5	2023-06-07_Demengeot_plate_5	2.121125	0.08321819426749685
-2023-06-07 plate_6	2023-06-07	Demengeot	plate_6	2023-06-07_Demengeot_plate_6	2.334625	0.12702636115614518
-2023-06-10 plate_1	2023-06-10	Demengeot	plate_1	2023-06-10_Demengeot_plate_1	2.019875	0.0920441470165268
-2023-06-10 plate_2	2023-06-10	Demengeot	plate_2	2023-06-10_Demengeot_plate_2	1.8976250000000001	0.09423668909415579
-2023-06-10 plate_3	2023-06-10	Demengeot	plate_3	2023-06-10_Demengeot_plate_3	1.86025	0.14746500795588274
-2023-06-10 plate_4	2023-06-10	Demengeot	plate_4	2023-06-10_Demengeot_plate_4	2.724625	0.12443579813358717
-2023-06-11 plate_1	2023-06-11	Demengeot	plate_1	2023-06-11_Demengeot_plate_1	2.552	0.12475919662636961
-2023-06-11 plate_2	2023-06-11	Demengeot	plate_2	2023-06-11_Demengeot_plate_2	2.198	0.12395736594260374
-2023-06-11 plate_3	2023-06-11	Demengeot	plate_3	2023-06-11_Demengeot_plate_3	1.9808750000000002	0.09820159658288949
-2023-06-11 plate_4	2023-06-11	Demengeot	plate_4	2023-06-11_Demengeot_plate_4	0.9835	0.044638228331458536
-2023-06-11 plate_5	2023-06-11	Demengeot	plate_5	2023-06-11_Demengeot_plate_5	1.6300000000000001	0.09647353449077554
-2023-06-11 plate_6	2023-06-11	Demengeot	plate_6	2023-06-11_Demengeot_plate_6	1.9915	0.07416968961201649
-2023-06-11 plate_7	2023-06-11	Demengeot	plate_7	2023-06-11_Demengeot_plate_7	2.475625	0.12454137293055902
-2023-06-11 plate_8	2023-06-11	Demengeot	plate_8	2023-06-11_Demengeot_plate_8	2.5012499999999998	0.15152533970075296
-2023-06-18 plate_1	2023-06-18	Demengeot	plate_1	2023-06-18_Demengeot_plate_1	1.62875	0.07308263424762021
-2023-06-18 plate_2	2023-06-18	Demengeot	plate_2	2023-06-18_Demengeot_plate_2	2.590375	0.13021513791743697
-2023-06-18 plate_3	2023-06-18	Demengeot	plate_3	2023-06-18_Demengeot_plate_3	1.343625	0.085511799519966
-2023-06-18 plate_4	2023-06-18	Demengeot	plate_4	2023-06-18_Demengeot_plate_4	2.3495	0.1268643820328284
-2023-06-18 plate_5	2023-06-18	Demengeot	plate_5	2023-06-18_Demengeot_plate_5	2.044625	0.09149853628805835
-2023-06-18 plate_6	2023-06-18	Demengeot	plate_6	2023-06-18_Demengeot_plate_6	1.19	0.034247001954290056
-2023-06-18 plate_7	2023-06-18	Demengeot	plate_7	2023-06-18_Demengeot_plate_7	1.88975	0.07324859823134597
-2023-06-18 plate_8	2023-06-18	Demengeot	plate_8	2023-06-18_Demengeot_plate_8	1.307	0.056497787567302137
-2023-06-20 plate_1	2023-06-20	Demengeot	plate_1	2023-06-20_Demengeot_plate_1	1.691	0.07687838262012094
-2023-06-20 plate_2	2023-06-20	Demengeot	plate_2	2023-06-20_Demengeot_plate_2	1.792375	0.1396955234991955
-2023-06-20 plate_3	2023-06-20	Demengeot	plate_3	2023-06-20_Demengeot_plate_3	1.8716249999999999	0.09949147486809391
-2023-06-20 plate_4	2023-06-20	Demengeot	plate_4	2023-06-20_Demengeot_plate_4	2.0335	0.09483218260244172
-2023-06-20 plate_5	2023-06-20	Demengeot	plate_5	2023-06-20_Demengeot_plate_5	1.903	0.08233034503927285
-2023-06-24 plate_1	2023-06-24	Demengeot	plate_1	2023-06-24_Demengeot_plate_1	1.961875	0.06524993158179226
-2023-06-24 plate_2	2023-06-24	Demengeot	plate_2	2023-06-24_Demengeot_plate_2	2.0147500000000003	0.07273385927966627
-2023-06-24 plate_3	2023-06-24	Demengeot	plate_3	2023-06-24_Demengeot_plate_3	2.416625	0.08878374609932035
-2023-06-24 plate_4	2023-06-24	Demengeot	plate_4	2023-06-24_Demengeot_plate_4	1.739875	0.09709411855072814
-2023-06-24 plate_5	2023-06-24	Demengeot	plate_5	2023-06-24_Demengeot_plate_5	1.95675	0.08811964269430188
-2023-06-25 plate_1	2023-06-25	Demengeot	plate_1	2023-06-25_Demengeot_plate_1	1.9929999999999999	0.08270083779157608
-2023-06-25 plate_2	2023-06-25	Demengeot	plate_2	2023-06-25_Demengeot_plate_2	2.093125	0.1450462364706017
-2023-06-25 plate_3	2023-06-25	Demengeot	plate_3	2023-06-25_Demengeot_plate_3	2.8255	0.1833427703198886
-2023-06-25 plate_4	2023-06-25	Demengeot	plate_4	2023-06-25_Demengeot_plate_4	1.394125	0.08727205001766435
-2023-06-25 plate_5	2023-06-25	Demengeot	plate_5	2023-06-25_Demengeot_plate_5	1.55625	0.06484872506732221
-2023-06-25 plate_6	2023-06-25	Demengeot	plate_6	2023-06-25_Demengeot_plate_6	1.3211249999999999	0.07099987424536147
-2023-06-25 plate_7	2023-06-25	Demengeot	plate_7	2023-06-25_Demengeot_plate_7	2.1245000000000003	0.06772634009642879
-2023-06-25 plate_8	2023-06-25	Demengeot	plate_8	2023-06-25_Demengeot_plate_8	2.9191249999999997	0.15342046566776646
-2023-06-27 plate_1	2023-06-27	Demengeot	plate_1	2023-06-27_Demengeot_plate_1	1.291125	0.04705752558609213
-2023-06-27 plate_2	2023-06-27	Demengeot	plate_2	2023-06-27_Demengeot_plate_2	1.8739999999999999	0.07642550060586543
-2023-06-27 plate_3	2023-06-27	Demengeot	plate_3	2023-06-27_Demengeot_plate_3	1.835875	0.03857622324696914
-2023-06-27 plate_4	2023-06-27	Demengeot	plate_4	2023-06-27_Demengeot_plate_4	2.051375	0.10949747224740591
-2023-06-27 plate_5	2023-06-27	Demengeot	plate_5	2023-06-27_Demengeot_plate_5	1.253875	0.05138214670486238
-2023-06-27 plate_6	2023-06-27	Demengeot	plate_6	2023-06-27_Demengeot_plate_6	2.038	0.07640493626536361
-2023-06-27 plate_7	2023-06-27	Demengeot	plate_7	2023-06-27_Demengeot_plate_7	2.76475	0.21940683021013074
-2023-07-04 plate_1	2023-07-04	Demengeot	plate_1	2023-07-04_Demengeot_plate_1	2.4175	0.10327771160461352
-2023-07-04 plate_2	2023-07-04	Demengeot	plate_2	2023-07-04_Demengeot_plate_2	2.172875	0.14994993212021523
-2023-07-04 plate_3	2023-07-04	Demengeot	plate_3	2023-07-04_Demengeot_plate_3	2.002625	0.09738280502370901
-2023-07-04 plate_4	2023-07-04	Demengeot	plate_4	2023-07-04_Demengeot_plate_4	2.3588750000000003	0.09835858231128443
-2023-07-04 plate_5	2023-07-04	Demengeot	plate_5	2023-07-04_Demengeot_plate_5	1.269625	0.0900966742687304
-2023-07-05 plate_1	2023-07-05	Demengeot	plate_1	2023-07-05_Demengeot_plate_1	1.619375	0.11316478187644272
-2023-07-05 plate_2	2023-07-05	Demengeot	plate_2	2023-07-05_Demengeot_plate_2	1.913875	0.1177241782424373
-2023-07-05 plate_3	2023-07-05	Demengeot	plate_3	2023-07-05_Demengeot_plate_3	1.92975	0.066217714505151265
-2023-07-05 plate_4	2023-07-05	Demengeot	plate_4	2023-07-05_Demengeot_plate_4	2.209875	0.12236647241556228
-2023-07-05 plate_5	2023-07-05	Demengeot	plate_5	2023-07-05_Demengeot_plate_5	2.087125	0.104439233870364
-2023-07-25 plate_1	2023-07-25	Demengeot	plate_1	2023-07-25_Demengeot_plate_1	1.9617499999999999	0.06081999201390464
-2023-07-25 plate_2	2023-07-25	Demengeot	plate_2	2023-07-25_Demengeot_plate_2	2.403625	0.08486617616661454
-2023-07-25 plate_3	2023-07-25	Demengeot	plate_3	2023-07-25_Demengeot_plate_3	2.133	0.11935660853090628
-2023-07-25 plate_4	2023-07-25	Demengeot	plate_4	2023-07-25_Demengeot_plate_4	2.04925	0.10475924780180501
-2023-07-25 plate_5	2023-07-25	Demengeot	plate_5	2023-07-25_Demengeot_plate_5	1.276125	0.11169657559656879
-2023-07-25 plate_6	2023-07-25	Demengeot	plate_6	2023-07-25_Demengeot_plate_6	1.8565	0.14837019338706237
-2023-07-25 plate_7	2023-07-25	Demengeot	plate_7	2023-07-25_Demengeot_plate_7	2.113625	0.14471937129690499
-2023-08-01 plate_1	2023-08-01	Demengeot	plate_1	2023-08-01_Demengeot_plate_1	2.230125	0.10963111849678964
-2023-08-01 plate_2	2023-08-01	Demengeot	plate_2	2023-08-01_Demengeot_plate_2	1.829375	0.058622125272192016
-2023-08-01 plate_3	2023-08-01	Demengeot	plate_3	2023-08-01_Demengeot_plate_3	1.945125	0.15879316061198245
-2023-08-01 plate_4	2023-08-01	Demengeot	plate_4	2023-08-01_Demengeot_plate_4	2.50725	0.13990277236097112
-2023-08-01 plate_5	2023-08-01	Demengeot	plate_5	2023-08-01_Demengeot_plate_5	1.774	0.07815552260899875
-2023-08-01 plate_6	2023-08-01	Demengeot	plate_6	2023-08-01_Demengeot_plate_6	1.767875	0.09997919426417817
-2023-08-01 plate_7	2023-08-01	Demengeot	plate_7	2023-08-01_Demengeot_plate_7	2.065875	0.10982120209035874
-2023-08-01 plate_8	2023-08-01	Demengeot	plate_8	2023-08-01_Demengeot_plate_8	1.800375	0.05307928705517543
-2023-08-20 plate_1	2023-08-20	Demengeot	plate_1	2023-08-20_Demengeot_plate_1	1.58625	0.10726968683782809
-2023-08-20 plate_2	2023-08-20	Demengeot	plate_2	2023-08-20_Demengeot_plate_2	2.402375	0.10812154205866126
-2023-08-20 plate_3	2023-08-20	Demengeot	plate_3	2023-08-20_Demengeot_plate_3	1.816875	0.05843540389670827
-2023-08-20 plate_4	2023-08-20	Demengeot	plate_4	2023-08-20_Demengeot_plate_4	1.385625	0.0527174069923778
-2023-08-20 plate_5	2023-08-20	Demengeot	plate_5	2023-08-20_Demengeot_plate_5	2.3525	0.10686707364090874
-2023-08-21 plate_1	2023-08-21	Demengeot	plate_1	2023-08-21_Demengeot_plate_1	1.861875	0.07746416222080654
-2023-08-21 plate_2	2023-08-21	Demengeot	plate_2	2023-08-21_Demengeot_plate_2	1.8391250000000001	0.07217921643876642
-2023-08-21 plate_3	2023-08-21	Demengeot	plate_3	2023-08-21_Demengeot_plate_3	1.67125	0.08777528125845001
-2023-08-21 plate_4	2023-08-21	Demengeot	plate_4	2023-08-21_Demengeot_plate_4	2.109375	0.09681490071264862
-2023-08-21 plate_5	2023-08-21	Demengeot	plate_5	2023-08-21_Demengeot_plate_5	1.758375	0.08487459236173937
-2023-08-21 plate_6	2023-08-21	Demengeot	plate_6	2023-08-21_Demengeot_plate_6	1.410375	0.05573902838868191
-2023-08-21 plate_7	2023-08-21	Demengeot	plate_7	2023-08-21_Demengeot_plate_7	2.901375	0.22809016857374625
-2023-08-31 plate_1	2023-08-31	Demengeot	plate_1	2023-08-31_Demengeot_plate_1	1.845625	0.08060651781516005
-2023-08-31 plate_2	2023-08-31	Demengeot	plate_2	2023-08-31_Demengeot_plate_2	1.54375	0.11565311434260149
-2023-08-31 plate_3	2023-08-31	Demengeot	plate_3	2023-08-31_Demengeot_plate_3	2.004	0.11281843820936362
-2023-08-31 plate_4	2023-08-31	Demengeot	plate_4	2023-08-31_Demengeot_plate_4	1.8725	0.0826023175046733
-2023-08-31 plate_5	2023-08-31	Demengeot	plate_5	2023-08-31_Demengeot_plate_5	1.51925	0.08019217988236582
-2023-08-31 plate_6	2023-08-31	Demengeot	plate_6	2023-08-31_Demengeot_plate_6	2.095625	0.08183596397672607
-2023-08-31 plate_7	2023-08-31	Demengeot	plate_7	2023-08-31_Demengeot_plate_7	1.8845	0.08547179986070597
-2023-08-31 plate_8	2023-08-31	Demengeot	plate_8	2023-08-31_Demengeot_plate_8	2.39225	0.11433253505205151
-2023-09-03 plate_1	2023-09-03	Demengeot	plate_1	2023-09-03_Demengeot_plate_1	2.14675	0.10194361186459899
-2023-09-03 plate_2	2023-09-03	Demengeot	plate_2	2023-09-03_Demengeot_plate_2	2.592875	0.18829569261441662
-2023-09-03 plate_3	2023-09-03	Demengeot	plate_3	2023-09-03_Demengeot_plate_3	2.374625	0.13122819546772058
-2023-09-03 plate_4	2023-09-03	Demengeot	plate_4	2023-09-03_Demengeot_plate_4	1.948	0.06432728814430161
-2023-09-03 plate_5	2023-09-03	Demengeot	plate_5	2023-09-03_Demengeot_plate_5	1.6208749999999998	0.06741648272386469
-2023-09-03 plate_6	2023-09-03	Demengeot	plate_6	2023-09-03_Demengeot_plate_6	2.1315	0.07233849005098977
-2023-09-03 plate_7	2023-09-03	Demengeot	plate_7	2023-09-03_Demengeot_plate_7	1.738375	0.071089355240932
-2023-09-07 plate_1	2023-09-07	Demengeot	plate_1	2023-09-07_Demengeot_plate_1	1.936625	0.13008671558398485
-2023-09-07 plate_2	2023-09-07	Demengeot	plate_2	2023-09-07_Demengeot_plate_2	1.8935	0.06240879058960474
-2023-09-07 plate_3	2023-09-07	Demengeot	plate_3	2023-09-07_Demengeot_plate_3	2.20875	0.11216155440129337
-2023-09-07 plate_4	2023-09-07	Demengeot	plate_4	2023-09-07_Demengeot_plate_4	2.49375	0.08741322227541685
-2023-09-09 plate_1	2023-09-09	Demengeot	plate_1	2023-09-09_Demengeot_plate_1	2.56625	0.08993608841838747
-2023-09-09 plate_2	2023-09-09	Demengeot	plate_2	2023-09-09_Demengeot_plate_2	1.808	0.10969828752407343
-2023-09-09 plate_3	2023-09-09	Demengeot	plate_3	2023-09-09_Demengeot_plate_3	1.899	0.07893939809390856
-2023-09-09 plate_4	2023-09-09	Demengeot	plate_4	2023-09-09_Demengeot_plate_4	2.575625	0.12743843051226172
-2023-09-09 plate_5	2023-09-09	Demengeot	plate_5	2023-09-09_Demengeot_plate_5	2.811	0.14867894461364925
-2023-09-09 plate_6	2023-09-09	Demengeot	plate_6	2023-09-09_Demengeot_plate_6	2.49875	0.13161388333194296
-2023-09-12 plate_1	2023-09-12	Demengeot	plate_1	2023-09-12_Demengeot_plate_1	1.441	0.06309856235627376
-2023-09-12 plate_2	2023-09-12	Demengeot	plate_2	2023-09-12_Demengeot_plate_2	1.684	0.10525207836427743
-2023-09-12 plate_3	2023-09-12	Demengeot	plate_3	2023-09-12_Demengeot_plate_3	2.292	0.09522904718924492
-2023-09-12 plate_4	2023-09-12	Demengeot	plate_4	2023-09-12_Demengeot_plate_4	3.05	0.15868117180596536
-2023-09-12 plate_5	2023-09-12	Demengeot	plate_5	2023-09-12_Demengeot_plate_5	2.314	0.06627432168106824
+file_name	Date	Lab	Plate	date_lab_plate
+2023-01-11 plate_1	2023-01-11	Demengeot	plate_1	2023-01-11_Demengeot_plate_1
+2023-01-11 plate_2	2023-01-11	Demengeot	plate_2	2023-01-11_Demengeot_plate_2
+2023-01-11 plate_3	2023-01-11	Demengeot	plate_3	2023-01-11_Demengeot_plate_3
+2023-01-11 plate_4	2023-01-11	Demengeot	plate_4	2023-01-11_Demengeot_plate_4
+2023-01-11 plate_5	2023-01-11	Demengeot	plate_5	2023-01-11_Demengeot_plate_5
+2023-01-17 plate_1	2023-01-17	Demengeot	plate_1	2023-01-17_Demengeot_plate_1
+2023-01-17 plate_2	2023-01-17	Demengeot	plate_2	2023-01-17_Demengeot_plate_2
+2023-01-17 plate_3	2023-01-17	Demengeot	plate_3	2023-01-17_Demengeot_plate_3
+2023-01-17 plate_4	2023-01-17	Demengeot	plate_4	2023-01-17_Demengeot_plate_4
+2023-01-17 plate_5	2023-01-17	Demengeot	plate_5	2023-01-17_Demengeot_plate_5
+2023-01-17 plate_6	2023-01-17	Demengeot	plate_6	2023-01-17_Demengeot_plate_6
+2023-01-24 plate_1	2023-01-24	Demengeot	plate_1	2023-01-24_Demengeot_plate_1
+2023-01-24 plate_2	2023-01-24	Demengeot	plate_2	2023-01-24_Demengeot_plate_2
+2023-01-24 plate_3	2023-01-24	Demengeot	plate_3	2023-01-24_Demengeot_plate_3
+2023-01-24 plate_4	2023-01-24	Demengeot	plate_4	2023-01-24_Demengeot_plate_4
+2023-01-24 plate_5	2023-01-24	Demengeot	plate_5	2023-01-24_Demengeot_plate_5
+2023-01-24 plate_6	2023-01-24	Demengeot	plate_6	2023-01-24_Demengeot_plate_6
+2023-02-14 plate_1	2023-02-14	Demengeot	plate_1	2023-02-14_Demengeot_plate_1
+2023-02-14 plate_2	2023-02-14	Demengeot	plate_2	2023-02-14_Demengeot_plate_2
+2023-02-14 plate_3	2023-02-14	Demengeot	plate_3	2023-02-14_Demengeot_plate_3
+2023-02-14 plate_4	2023-02-14	Demengeot	plate_4	2023-02-14_Demengeot_plate_4
+2023-03-05 plate_1	2023-03-05	Demengeot	plate_1	2023-03-05_Demengeot_plate_1
+2023-03-05 plate_2	2023-03-05	Demengeot	plate_2	2023-03-05_Demengeot_plate_2
+2023-03-05 plate_3	2023-03-05	Demengeot	plate_3	2023-03-05_Demengeot_plate_3
+2023-03-05 plate_4	2023-03-05	Demengeot	plate_4	2023-03-05_Demengeot_plate_4
+2023-03-05 plate_5	2023-03-05	Demengeot	plate_5	2023-03-05_Demengeot_plate_5
+2023-03-05 plate_6	2023-03-05	Demengeot	plate_6	2023-03-05_Demengeot_plate_6
+2023-03-05 plate_7	2023-03-05	Demengeot	plate_7	2023-03-05_Demengeot_plate_7
+2023-03-10 plate_1	2023-03-10	Demengeot	plate_1	2023-03-10_Demengeot_plate_1
+2023-03-10 plate_2	2023-03-10	Demengeot	plate_2	2023-03-10_Demengeot_plate_2
+2023-03-10 plate_3	2023-03-10	Demengeot	plate_3	2023-03-10_Demengeot_plate_3
+2023-03-10 plate_4	2023-03-10	Demengeot	plate_4	2023-03-10_Demengeot_plate_4
+2023-03-10 plate_5	2023-03-10	Demengeot	plate_5	2023-03-10_Demengeot_plate_5
+2023-03-11 plate_1	2023-03-11	Demengeot	plate_1	2023-03-11_Demengeot_plate_1
+2023-03-11 plate_2	2023-03-11	Demengeot	plate_2	2023-03-11_Demengeot_plate_2
+2023-03-11 plate_3	2023-03-11	Demengeot	plate_3	2023-03-11_Demengeot_plate_3
+2023-03-11 plate_4	2023-03-11	Demengeot	plate_4	2023-03-11_Demengeot_plate_4
+2023-03-14 plate_1	2023-03-14	Demengeot	plate_1	2023-03-14_Demengeot_plate_1
+2023-03-14 plate_2	2023-03-14	Demengeot	plate_2	2023-03-14_Demengeot_plate_2
+2023-03-14 plate_3	2023-03-14	Demengeot	plate_3	2023-03-14_Demengeot_plate_3
+2023-03-14 plate_4	2023-03-14	Demengeot	plate_4	2023-03-14_Demengeot_plate_4
+2023-03-14 plate_5	2023-03-14	Demengeot	plate_5	2023-03-14_Demengeot_plate_5
+2023-03-14 plate_6	2023-03-14	Demengeot	plate_6	2023-03-14_Demengeot_plate_6
+2023-03-14 plate_7	2023-03-14	Demengeot	plate_7	2023-03-14_Demengeot_plate_7
+2023-03-14 plate_8	2023-03-14	Demengeot	plate_8	2023-03-14_Demengeot_plate_8
+2023-03-15 plate_1	2023-03-15	Demengeot	plate_1	2023-03-15_Demengeot_plate_1
+2023-03-15 plate_2	2023-03-15	Demengeot	plate_2	2023-03-15_Demengeot_plate_2
+2023-03-15 plate_3	2023-03-15	Demengeot	plate_3	2023-03-15_Demengeot_plate_3
+2023-03-15 plate_4	2023-03-15	Demengeot	plate_4	2023-03-15_Demengeot_plate_4
+2023-03-15 plate_5	2023-03-15	Demengeot	plate_5	2023-03-15_Demengeot_plate_5
+2023-03-31 plate_1	2023-03-31	Demengeot	plate_1	2023-03-31_Demengeot_plate_1
+2023-03-31 plate_2	2023-03-31	Demengeot	plate_2	2023-03-31_Demengeot_plate_2
+2023-03-31 plate_3	2023-03-31	Demengeot	plate_3	2023-03-31_Demengeot_plate_3
+2023-03-31 plate_4	2023-03-31	Demengeot	plate_4	2023-03-31_Demengeot_plate_4
+2023-03-31 plate_5	2023-03-31	Demengeot	plate_5	2023-03-31_Demengeot_plate_5
+2023-04-03 plate_1	2023-04-03	Demengeot	plate_1	2023-04-03_Demengeot_plate_1
+2023-04-03 plate_2	2023-04-03	Demengeot	plate_2	2023-04-03_Demengeot_plate_2
+2023-04-03 plate_3	2023-04-03	Demengeot	plate_3	2023-04-03_Demengeot_plate_3
+2023-04-03 plate_4	2023-04-03	Demengeot	plate_4	2023-04-03_Demengeot_plate_4
+2023-04-03 plate_5	2023-04-03	Demengeot	plate_5	2023-04-03_Demengeot_plate_5
+2023-04-03 plate_6	2023-04-03	Demengeot	plate_6	2023-04-03_Demengeot_plate_6
+2023-04-03 plate_7	2023-04-03	Demengeot	plate_7	2023-04-03_Demengeot_plate_7
+2023-04-03 plate_8	2023-04-03	Demengeot	plate_8	2023-04-03_Demengeot_plate_8
+2023-04-10 plate_1	2023-04-10	Demengeot	plate_1	2023-04-10_Demengeot_plate_1
+2023-04-10 plate_2	2023-04-10	Demengeot	plate_2	2023-04-10_Demengeot_plate_2
+2023-04-10 plate_3	2023-04-10	Demengeot	plate_3	2023-04-10_Demengeot_plate_3
+2023-04-10 plate_4	2023-04-10	Demengeot	plate_4	2023-04-10_Demengeot_plate_4
+2023-04-10 plate_5	2023-04-10	Demengeot	plate_5	2023-04-10_Demengeot_plate_5
+2023-04-10 plate_6	2023-04-10	Demengeot	plate_6	2023-04-10_Demengeot_plate_6
+2023-04-10 plate_7	2023-04-10	Demengeot	plate_7	2023-04-10_Demengeot_plate_7
+2023-04-10 plate_8	2023-04-10	Demengeot	plate_8	2023-04-10_Demengeot_plate_8
+2023-04-15 plate_1	2023-04-15	Demengeot	plate_1	2023-04-15_Demengeot_plate_1
+2023-04-15 plate_2	2023-04-15	Demengeot	plate_2	2023-04-15_Demengeot_plate_2
+2023-04-15 plate_3	2023-04-15	Demengeot	plate_3	2023-04-15_Demengeot_plate_3
+2023-04-15 plate_4	2023-04-15	Demengeot	plate_4	2023-04-15_Demengeot_plate_4
+2023-04-15 plate_5	2023-04-15	Demengeot	plate_5	2023-04-15_Demengeot_plate_5
+2023-04-15 plate_6	2023-04-15	Demengeot	plate_6	2023-04-15_Demengeot_plate_6
+2023-04-20 plate_1	2023-04-20	Demengeot	plate_1	2023-04-20_Demengeot_plate_1
+2023-04-20 plate_2	2023-04-20	Demengeot	plate_2	2023-04-20_Demengeot_plate_2
+2023-04-20 plate_3	2023-04-20	Demengeot	plate_3	2023-04-20_Demengeot_plate_3
+2023-04-20 plate_4	2023-04-20	Demengeot	plate_4	2023-04-20_Demengeot_plate_4
+2023-04-20 plate_5	2023-04-20	Demengeot	plate_5	2023-04-20_Demengeot_plate_5
+2023-04-23 plate_1	2023-04-23	Demengeot	plate_1	2023-04-23_Demengeot_plate_1
+2023-04-23 plate_2	2023-04-23	Demengeot	plate_2	2023-04-23_Demengeot_plate_2
+2023-04-23 plate_3	2023-04-23	Demengeot	plate_3	2023-04-23_Demengeot_plate_3
+2023-04-23 plate_4	2023-04-23	Demengeot	plate_4	2023-04-23_Demengeot_plate_4
+2023-04-23 plate_5	2023-04-23	Demengeot	plate_5	2023-04-23_Demengeot_plate_5
+2023-04-23 plate_6	2023-04-23	Demengeot	plate_6	2023-04-23_Demengeot_plate_6
+2023-04-25 plate_1	2023-04-25	Demengeot	plate_1	2023-04-25_Demengeot_plate_1
+2023-04-25 plate_2	2023-04-25	Demengeot	plate_2	2023-04-25_Demengeot_plate_2
+2023-04-25 plate_3	2023-04-25	Demengeot	plate_3	2023-04-25_Demengeot_plate_3
+2023-04-25 plate_4	2023-04-25	Demengeot	plate_4	2023-04-25_Demengeot_plate_4
+2023-04-29 plate_1	2023-04-29	Demengeot	plate_1	2023-04-29_Demengeot_plate_1
+2023-04-29 plate_2	2023-04-29	Demengeot	plate_2	2023-04-29_Demengeot_plate_2
+2023-04-29 plate_3	2023-04-29	Demengeot	plate_3	2023-04-29_Demengeot_plate_3
+2023-04-29 plate_4	2023-04-29	Demengeot	plate_4	2023-04-29_Demengeot_plate_4
+2023-04-29 plate_5	2023-04-29	Demengeot	plate_5	2023-04-29_Demengeot_plate_5
+2023-04-29 plate_6	2023-04-29	Demengeot	plate_6	2023-04-29_Demengeot_plate_6
+2023-04-29 plate_7	2023-04-29	Demengeot	plate_7	2023-04-29_Demengeot_plate_7
+2023-05-03 plate_1	2023-05-03	Demengeot	plate_1	2023-05-03_Demengeot_plate_1
+2023-05-03 plate_2	2023-05-03	Demengeot	plate_2	2023-05-03_Demengeot_plate_2
+2023-05-03 plate_3	2023-05-03	Demengeot	plate_3	2023-05-03_Demengeot_plate_3
+2023-05-03 plate_4	2023-05-03	Demengeot	plate_4	2023-05-03_Demengeot_plate_4
+2023-05-03 plate_5	2023-05-03	Demengeot	plate_5	2023-05-03_Demengeot_plate_5
+2023-05-16 plate_1	2023-05-16	Demengeot	plate_1	2023-05-16_Demengeot_plate_1
+2023-05-16 plate_2	2023-05-16	Demengeot	plate_2	2023-05-16_Demengeot_plate_2
+2023-05-16 plate_3	2023-05-16	Demengeot	plate_3	2023-05-16_Demengeot_plate_3
+2023-05-16 plate_4	2023-05-16	Demengeot	plate_4	2023-05-16_Demengeot_plate_4
+2023-05-16 plate_5	2023-05-16	Demengeot	plate_5	2023-05-16_Demengeot_plate_5
+2023-05-16 plate_6	2023-05-16	Demengeot	plate_6	2023-05-16_Demengeot_plate_6
+2023-05-21 plate_1	2023-05-21	Demengeot	plate_1	2023-05-21_Demengeot_plate_1
+2023-05-21 plate_2	2023-05-21	Demengeot	plate_2	2023-05-21_Demengeot_plate_2
+2023-05-21 plate_3	2023-05-21	Demengeot	plate_3	2023-05-21_Demengeot_plate_3
+2023-05-21 plate_4	2023-05-21	Demengeot	plate_4	2023-05-21_Demengeot_plate_4
+2023-05-22 plate_1	2023-05-22	Demengeot	plate_1	2023-05-22_Demengeot_plate_1
+2023-05-22 plate_2	2023-05-22	Demengeot	plate_2	2023-05-22_Demengeot_plate_2
+2023-05-22 plate_3	2023-05-22	Demengeot	plate_3	2023-05-22_Demengeot_plate_3
+2023-05-22 plate_4	2023-05-22	Demengeot	plate_4	2023-05-22_Demengeot_plate_4
+2023-05-23 plate_1	2023-05-23	Demengeot	plate_1	2023-05-23_Demengeot_plate_1
+2023-05-23 plate_2	2023-05-23	Demengeot	plate_2	2023-05-23_Demengeot_plate_2
+2023-05-23 plate_3	2023-05-23	Demengeot	plate_3	2023-05-23_Demengeot_plate_3
+2023-05-23 plate_4	2023-05-23	Demengeot	plate_4	2023-05-23_Demengeot_plate_4
+2023-05-24 plate_1	2023-05-24	Demengeot	plate_1	2023-05-24_Demengeot_plate_1
+2023-05-24 plate_2	2023-05-24	Demengeot	plate_2	2023-05-24_Demengeot_plate_2
+2023-05-24 plate_3	2023-05-24	Demengeot	plate_3	2023-05-24_Demengeot_plate_3
+2023-05-24 plate_4	2023-05-24	Demengeot	plate_4	2023-05-24_Demengeot_plate_4
+2023-05-24 plate_5	2023-05-24	Demengeot	plate_5	2023-05-24_Demengeot_plate_5
+2023-05-24 plate_6	2023-05-24	Demengeot	plate_6	2023-05-24_Demengeot_plate_6
+2023-05-24 plate_7	2023-05-24	Demengeot	plate_7	2023-05-24_Demengeot_plate_7
+2023-05-24 plate_8	2023-05-24	Demengeot	plate_8	2023-05-24_Demengeot_plate_8
+2023-06-07 plate_1	2023-06-07	Demengeot	plate_1	2023-06-07_Demengeot_plate_1
+2023-06-07 plate_2	2023-06-07	Demengeot	plate_2	2023-06-07_Demengeot_plate_2
+2023-06-07 plate_3	2023-06-07	Demengeot	plate_3	2023-06-07_Demengeot_plate_3
+2023-06-07 plate_4	2023-06-07	Demengeot	plate_4	2023-06-07_Demengeot_plate_4
+2023-06-07 plate_5	2023-06-07	Demengeot	plate_5	2023-06-07_Demengeot_plate_5
+2023-06-07 plate_6	2023-06-07	Demengeot	plate_6	2023-06-07_Demengeot_plate_6
+2023-06-10 plate_1	2023-06-10	Demengeot	plate_1	2023-06-10_Demengeot_plate_1
+2023-06-10 plate_2	2023-06-10	Demengeot	plate_2	2023-06-10_Demengeot_plate_2
+2023-06-10 plate_3	2023-06-10	Demengeot	plate_3	2023-06-10_Demengeot_plate_3
+2023-06-10 plate_4	2023-06-10	Demengeot	plate_4	2023-06-10_Demengeot_plate_4
+2023-06-11 plate_1	2023-06-11	Demengeot	plate_1	2023-06-11_Demengeot_plate_1
+2023-06-11 plate_2	2023-06-11	Demengeot	plate_2	2023-06-11_Demengeot_plate_2
+2023-06-11 plate_3	2023-06-11	Demengeot	plate_3	2023-06-11_Demengeot_plate_3
+2023-06-11 plate_4	2023-06-11	Demengeot	plate_4	2023-06-11_Demengeot_plate_4
+2023-06-11 plate_5	2023-06-11	Demengeot	plate_5	2023-06-11_Demengeot_plate_5
+2023-06-11 plate_6	2023-06-11	Demengeot	plate_6	2023-06-11_Demengeot_plate_6
+2023-06-11 plate_7	2023-06-11	Demengeot	plate_7	2023-06-11_Demengeot_plate_7
+2023-06-11 plate_8	2023-06-11	Demengeot	plate_8	2023-06-11_Demengeot_plate_8
+2023-06-18 plate_1	2023-06-18	Demengeot	plate_1	2023-06-18_Demengeot_plate_1
+2023-06-18 plate_2	2023-06-18	Demengeot	plate_2	2023-06-18_Demengeot_plate_2
+2023-06-18 plate_3	2023-06-18	Demengeot	plate_3	2023-06-18_Demengeot_plate_3
+2023-06-18 plate_4	2023-06-18	Demengeot	plate_4	2023-06-18_Demengeot_plate_4
+2023-06-18 plate_5	2023-06-18	Demengeot	plate_5	2023-06-18_Demengeot_plate_5
+2023-06-18 plate_6	2023-06-18	Demengeot	plate_6	2023-06-18_Demengeot_plate_6
+2023-06-18 plate_7	2023-06-18	Demengeot	plate_7	2023-06-18_Demengeot_plate_7
+2023-06-18 plate_8	2023-06-18	Demengeot	plate_8	2023-06-18_Demengeot_plate_8
+2023-06-20 plate_1	2023-06-20	Demengeot	plate_1	2023-06-20_Demengeot_plate_1
+2023-06-20 plate_2	2023-06-20	Demengeot	plate_2	2023-06-20_Demengeot_plate_2
+2023-06-20 plate_3	2023-06-20	Demengeot	plate_3	2023-06-20_Demengeot_plate_3
+2023-06-20 plate_4	2023-06-20	Demengeot	plate_4	2023-06-20_Demengeot_plate_4
+2023-06-20 plate_5	2023-06-20	Demengeot	plate_5	2023-06-20_Demengeot_plate_5
+2023-06-24 plate_1	2023-06-24	Demengeot	plate_1	2023-06-24_Demengeot_plate_1
+2023-06-24 plate_2	2023-06-24	Demengeot	plate_2	2023-06-24_Demengeot_plate_2
+2023-06-24 plate_3	2023-06-24	Demengeot	plate_3	2023-06-24_Demengeot_plate_3
+2023-06-24 plate_4	2023-06-24	Demengeot	plate_4	2023-06-24_Demengeot_plate_4
+2023-06-24 plate_5	2023-06-24	Demengeot	plate_5	2023-06-24_Demengeot_plate_5
+2023-06-25 plate_1	2023-06-25	Demengeot	plate_1	2023-06-25_Demengeot_plate_1
+2023-06-25 plate_2	2023-06-25	Demengeot	plate_2	2023-06-25_Demengeot_plate_2
+2023-06-25 plate_3	2023-06-25	Demengeot	plate_3	2023-06-25_Demengeot_plate_3
+2023-06-25 plate_4	2023-06-25	Demengeot	plate_4	2023-06-25_Demengeot_plate_4
+2023-06-25 plate_5	2023-06-25	Demengeot	plate_5	2023-06-25_Demengeot_plate_5
+2023-06-25 plate_6	2023-06-25	Demengeot	plate_6	2023-06-25_Demengeot_plate_6
+2023-06-25 plate_7	2023-06-25	Demengeot	plate_7	2023-06-25_Demengeot_plate_7
+2023-06-25 plate_8	2023-06-25	Demengeot	plate_8	2023-06-25_Demengeot_plate_8
+2023-06-27 plate_1	2023-06-27	Demengeot	plate_1	2023-06-27_Demengeot_plate_1
+2023-06-27 plate_2	2023-06-27	Demengeot	plate_2	2023-06-27_Demengeot_plate_2
+2023-06-27 plate_3	2023-06-27	Demengeot	plate_3	2023-06-27_Demengeot_plate_3
+2023-06-27 plate_4	2023-06-27	Demengeot	plate_4	2023-06-27_Demengeot_plate_4
+2023-06-27 plate_5	2023-06-27	Demengeot	plate_5	2023-06-27_Demengeot_plate_5
+2023-06-27 plate_6	2023-06-27	Demengeot	plate_6	2023-06-27_Demengeot_plate_6
+2023-06-27 plate_7	2023-06-27	Demengeot	plate_7	2023-06-27_Demengeot_plate_7
+2023-07-04 plate_1	2023-07-04	Demengeot	plate_1	2023-07-04_Demengeot_plate_1
+2023-07-04 plate_2	2023-07-04	Demengeot	plate_2	2023-07-04_Demengeot_plate_2
+2023-07-04 plate_3	2023-07-04	Demengeot	plate_3	2023-07-04_Demengeot_plate_3
+2023-07-04 plate_4	2023-07-04	Demengeot	plate_4	2023-07-04_Demengeot_plate_4
+2023-07-04 plate_5	2023-07-04	Demengeot	plate_5	2023-07-04_Demengeot_plate_5
+2023-07-05 plate_1	2023-07-05	Demengeot	plate_1	2023-07-05_Demengeot_plate_1
+2023-07-05 plate_2	2023-07-05	Demengeot	plate_2	2023-07-05_Demengeot_plate_2
+2023-07-05 plate_3	2023-07-05	Demengeot	plate_3	2023-07-05_Demengeot_plate_3
+2023-07-05 plate_4	2023-07-05	Demengeot	plate_4	2023-07-05_Demengeot_plate_4
+2023-07-05 plate_5	2023-07-05	Demengeot	plate_5	2023-07-05_Demengeot_plate_5
+2023-07-25 plate_1	2023-07-25	Demengeot	plate_1	2023-07-25_Demengeot_plate_1
+2023-07-25 plate_2	2023-07-25	Demengeot	plate_2	2023-07-25_Demengeot_plate_2
+2023-07-25 plate_3	2023-07-25	Demengeot	plate_3	2023-07-25_Demengeot_plate_3
+2023-07-25 plate_4	2023-07-25	Demengeot	plate_4	2023-07-25_Demengeot_plate_4
+2023-07-25 plate_5	2023-07-25	Demengeot	plate_5	2023-07-25_Demengeot_plate_5
+2023-07-25 plate_6	2023-07-25	Demengeot	plate_6	2023-07-25_Demengeot_plate_6
+2023-07-25 plate_7	2023-07-25	Demengeot	plate_7	2023-07-25_Demengeot_plate_7
+2023-08-01 plate_1	2023-08-01	Demengeot	plate_1	2023-08-01_Demengeot_plate_1
+2023-08-01 plate_2	2023-08-01	Demengeot	plate_2	2023-08-01_Demengeot_plate_2
+2023-08-01 plate_3	2023-08-01	Demengeot	plate_3	2023-08-01_Demengeot_plate_3
+2023-08-01 plate_4	2023-08-01	Demengeot	plate_4	2023-08-01_Demengeot_plate_4
+2023-08-01 plate_5	2023-08-01	Demengeot	plate_5	2023-08-01_Demengeot_plate_5
+2023-08-01 plate_6	2023-08-01	Demengeot	plate_6	2023-08-01_Demengeot_plate_6
+2023-08-01 plate_7	2023-08-01	Demengeot	plate_7	2023-08-01_Demengeot_plate_7
+2023-08-01 plate_8	2023-08-01	Demengeot	plate_8	2023-08-01_Demengeot_plate_8
+2023-08-20 plate_1	2023-08-20	Demengeot	plate_1	2023-08-20_Demengeot_plate_1
+2023-08-20 plate_2	2023-08-20	Demengeot	plate_2	2023-08-20_Demengeot_plate_2
+2023-08-20 plate_3	2023-08-20	Demengeot	plate_3	2023-08-20_Demengeot_plate_3
+2023-08-20 plate_4	2023-08-20	Demengeot	plate_4	2023-08-20_Demengeot_plate_4
+2023-08-20 plate_5	2023-08-20	Demengeot	plate_5	2023-08-20_Demengeot_plate_5
+2023-08-21 plate_1	2023-08-21	Demengeot	plate_1	2023-08-21_Demengeot_plate_1
+2023-08-21 plate_2	2023-08-21	Demengeot	plate_2	2023-08-21_Demengeot_plate_2
+2023-08-21 plate_3	2023-08-21	Demengeot	plate_3	2023-08-21_Demengeot_plate_3
+2023-08-21 plate_4	2023-08-21	Demengeot	plate_4	2023-08-21_Demengeot_plate_4
+2023-08-21 plate_5	2023-08-21	Demengeot	plate_5	2023-08-21_Demengeot_plate_5
+2023-08-21 plate_6	2023-08-21	Demengeot	plate_6	2023-08-21_Demengeot_plate_6
+2023-08-21 plate_7	2023-08-21	Demengeot	plate_7	2023-08-21_Demengeot_plate_7
+2023-08-31 plate_1	2023-08-31	Demengeot	plate_1	2023-08-31_Demengeot_plate_1
+2023-08-31 plate_2	2023-08-31	Demengeot	plate_2	2023-08-31_Demengeot_plate_2
+2023-08-31 plate_3	2023-08-31	Demengeot	plate_3	2023-08-31_Demengeot_plate_3
+2023-08-31 plate_4	2023-08-31	Demengeot	plate_4	2023-08-31_Demengeot_plate_4
+2023-08-31 plate_5	2023-08-31	Demengeot	plate_5	2023-08-31_Demengeot_plate_5
+2023-08-31 plate_6	2023-08-31	Demengeot	plate_6	2023-08-31_Demengeot_plate_6
+2023-08-31 plate_7	2023-08-31	Demengeot	plate_7	2023-08-31_Demengeot_plate_7
+2023-08-31 plate_8	2023-08-31	Demengeot	plate_8	2023-08-31_Demengeot_plate_8
+2023-09-03 plate_1	2023-09-03	Demengeot	plate_1	2023-09-03_Demengeot_plate_1
+2023-09-03 plate_2	2023-09-03	Demengeot	plate_2	2023-09-03_Demengeot_plate_2
+2023-09-03 plate_3	2023-09-03	Demengeot	plate_3	2023-09-03_Demengeot_plate_3
+2023-09-03 plate_4	2023-09-03	Demengeot	plate_4	2023-09-03_Demengeot_plate_4
+2023-09-03 plate_5	2023-09-03	Demengeot	plate_5	2023-09-03_Demengeot_plate_5
+2023-09-03 plate_6	2023-09-03	Demengeot	plate_6	2023-09-03_Demengeot_plate_6
+2023-09-03 plate_7	2023-09-03	Demengeot	plate_7	2023-09-03_Demengeot_plate_7
+2023-09-07 plate_1	2023-09-07	Demengeot	plate_1	2023-09-07_Demengeot_plate_1
+2023-09-07 plate_2	2023-09-07	Demengeot	plate_2	2023-09-07_Demengeot_plate_2
+2023-09-07 plate_3	2023-09-07	Demengeot	plate_3	2023-09-07_Demengeot_plate_3
+2023-09-07 plate_4	2023-09-07	Demengeot	plate_4	2023-09-07_Demengeot_plate_4
+2023-09-09 plate_1	2023-09-09	Demengeot	plate_1	2023-09-09_Demengeot_plate_1
+2023-09-09 plate_2	2023-09-09	Demengeot	plate_2	2023-09-09_Demengeot_plate_2
+2023-09-09 plate_3	2023-09-09	Demengeot	plate_3	2023-09-09_Demengeot_plate_3
+2023-09-09 plate_4	2023-09-09	Demengeot	plate_4	2023-09-09_Demengeot_plate_4
+2023-09-09 plate_5	2023-09-09	Demengeot	plate_5	2023-09-09_Demengeot_plate_5
+2023-09-09 plate_6	2023-09-09	Demengeot	plate_6	2023-09-09_Demengeot_plate_6
+2023-09-12 plate_1	2023-09-12	Demengeot	plate_1	2023-09-12_Demengeot_plate_1
+2023-09-12 plate_2	2023-09-12	Demengeot	plate_2	2023-09-12_Demengeot_plate_2
+2023-09-12 plate_3	2023-09-12	Demengeot	plate_3	2023-09-12_Demengeot_plate_3
+2023-09-12 plate_4	2023-09-12	Demengeot	plate_4	2023-09-12_Demengeot_plate_4
+2023-09-12 plate_5	2023-09-12	Demengeot	plate_5	2023-09-12_Demengeot_plate_5
+Fri Aug 18 2023 (P1)	2023-08-18	Howard	plate_1	2023-08-18_Howard_plate_1
+Fri Aug 18 2023 (P2)	2023-08-18	Howard	plate_2	2023-08-18_Howard_plate_2
+Fri Aug 18 2023 (P3)	2023-08-18	Howard	plate_3	2023-08-18_Howard_plate_3
+Fri Aug 18 2023 (P4)	2023-08-18	Howard	plate_4	2023-08-18_Howard_plate_4
+Fri Aug 18 2023 (P5)	2023-08-18	Howard	plate_5	2023-08-18_Howard_plate_5
+Fri Oct 06 2023 (P1)	2023-10-06	Howard	plate_1	2023-10-06_Howard_plate_1
+Fri Oct 06 2023 (P2)	2023-10-06	Howard	plate_2	2023-10-06_Howard_plate_2
+Fri Oct 06 2023 (P3)	2023-10-06	Howard	plate_3	2023-10-06_Howard_plate_3
+Fri Oct 06 2023 (P4)	2023-10-06	Howard	plate_4	2023-10-06_Howard_plate_4
+Fri Oct 06 2023 (P5)	2023-10-06	Howard	plate_5	2023-10-06_Howard_plate_5
+Mon Aug 21 2023 (P1)	2023-08-21	Howard	plate_1	2023-08-21_Howard_plate_1
+Mon Aug 21 2023 (P2)	2023-08-21	Howard	plate_2	2023-08-21_Howard_plate_2
+Mon Aug 21 2023 (P3)	2023-08-21	Howard	plate_3	2023-08-21_Howard_plate_3
+Mon Aug 21 2023 (P4)	2023-08-21	Howard	plate_4	2023-08-21_Howard_plate_4
+Mon Dec 25 2023 (P1)	2023-12-25	Howard	plate_1	2023-12-25_Howard_plate_1
+Mon Dec 25 2023 (P2)	2023-12-25	Howard	plate_2	2023-12-25_Howard_plate_2
+Mon Dec 25 2023 (P3)	2023-12-25	Howard	plate_3	2023-12-25_Howard_plate_3
+Mon Dec 25 2023 (P4)	2023-12-25	Howard	plate_4	2023-12-25_Howard_plate_4
+Mon Dec 25 2023 (P5)	2023-12-25	Howard	plate_5	2023-12-25_Howard_plate_5
+Mon Dec 25 2023 (P6)	2023-12-25	Howard	plate_6	2023-12-25_Howard_plate_6
+Mon Dec 25 2023 (P7)	2023-12-25	Howard	plate_7	2023-12-25_Howard_plate_7
+Mon Dec 25 2023 (P8)	2023-12-25	Howard	plate_8	2023-12-25_Howard_plate_8
+Mon Nov 13 2023 (P1)	2023-11-13	Howard	plate_1	2023-11-13_Howard_plate_1
+Mon Nov 13 2023 (P2)	2023-11-13	Howard	plate_2	2023-11-13_Howard_plate_2
+Mon Nov 13 2023 (P3)	2023-11-13	Howard	plate_3	2023-11-13_Howard_plate_3
+Mon Nov 13 2023 (P4)	2023-11-13	Howard	plate_4	2023-11-13_Howard_plate_4
+Mon Nov 13 2023 (P5)	2023-11-13	Howard	plate_5	2023-11-13_Howard_plate_5
+Mon Nov 13 2023 (P6)	2023-11-13	Howard	plate_6	2023-11-13_Howard_plate_6
+Mon Nov 27 2023 (P1)	2023-11-27	Howard	plate_1	2023-11-27_Howard_plate_1
+Mon Nov 27 2023 (P2)	2023-11-27	Howard	plate_2	2023-11-27_Howard_plate_2
+Mon Nov 27 2023 (P3)	2023-11-27	Howard	plate_3	2023-11-27_Howard_plate_3
+Mon Nov 27 2023 (P4)	2023-11-27	Howard	plate_4	2023-11-27_Howard_plate_4
+Mon Nov 27 2023 (P5)	2023-11-27	Howard	plate_5	2023-11-27_Howard_plate_5
+Mon Nov 27 2023 (P6)	2023-11-27	Howard	plate_6	2023-11-27_Howard_plate_6
+Mon Nov 27 2023 (P7)	2023-11-27	Howard	plate_7	2023-11-27_Howard_plate_7
+Mon Nov 27 2023 (P8)	2023-11-27	Howard	plate_8	2023-11-27_Howard_plate_8
+Sat Aug 12 2023 (P1)	2023-08-12	Howard	plate_1	2023-08-12_Howard_plate_1
+Sat Aug 12 2023 (P2)	2023-08-12	Howard	plate_2	2023-08-12_Howard_plate_2
+Sat Aug 12 2023 (P3)	2023-08-12	Howard	plate_3	2023-08-12_Howard_plate_3
+Sat Aug 12 2023 (P4)	2023-08-12	Howard	plate_4	2023-08-12_Howard_plate_4
+Sat Aug 12 2023 (P5)	2023-08-12	Howard	plate_5	2023-08-12_Howard_plate_5
+Sat Aug 12 2023 (P6)	2023-08-12	Howard	plate_6	2023-08-12_Howard_plate_6
+Sat Aug 12 2023 (P7)	2023-08-12	Howard	plate_7	2023-08-12_Howard_plate_7
+Sat Aug 12 2023 (P8)	2023-08-12	Howard	plate_8	2023-08-12_Howard_plate_8
+Sat Dec 02 2023 (P1)	2023-12-02	Howard	plate_1	2023-12-02_Howard_plate_1
+Sat Dec 02 2023 (P2)	2023-12-02	Howard	plate_2	2023-12-02_Howard_plate_2
+Sat Dec 02 2023 (P3)	2023-12-02	Howard	plate_3	2023-12-02_Howard_plate_3
+Sat Dec 02 2023 (P4)	2023-12-02	Howard	plate_4	2023-12-02_Howard_plate_4
+Sat Dec 09 2023 (P1)	2023-12-09	Howard	plate_1	2023-12-09_Howard_plate_1
+Sat Dec 09 2023 (P2)	2023-12-09	Howard	plate_2	2023-12-09_Howard_plate_2
+Sat Dec 09 2023 (P3)	2023-12-09	Howard	plate_3	2023-12-09_Howard_plate_3
+Sat Dec 09 2023 (P4)	2023-12-09	Howard	plate_4	2023-12-09_Howard_plate_4
+Sat Oct 14 2023 (P1)	2023-10-14	Howard	plate_1	2023-10-14_Howard_plate_1
+Sat Oct 14 2023 (P2)	2023-10-14	Howard	plate_2	2023-10-14_Howard_plate_2
+Sat Oct 14 2023 (P3)	2023-10-14	Howard	plate_3	2023-10-14_Howard_plate_3
+Sat Oct 14 2023 (P4)	2023-10-14	Howard	plate_4	2023-10-14_Howard_plate_4
+Sat Oct 14 2023 (P5)	2023-10-14	Howard	plate_5	2023-10-14_Howard_plate_5
+Sat Oct 14 2023 (P6)	2023-10-14	Howard	plate_6	2023-10-14_Howard_plate_6
+Sat Oct 14 2023 (P7)	2023-10-14	Howard	plate_7	2023-10-14_Howard_plate_7
+Sat Oct 14 2023 (P8)	2023-10-14	Howard	plate_8	2023-10-14_Howard_plate_8
+Sat Sep 09 2023 (P1)	2023-09-09	Howard	plate_1	2023-09-09_Howard_plate_1
+Sat Sep 09 2023 (P2)	2023-09-09	Howard	plate_2	2023-09-09_Howard_plate_2
+Sat Sep 09 2023 (P3)	2023-09-09	Howard	plate_3	2023-09-09_Howard_plate_3
+Sat Sep 09 2023 (P4)	2023-09-09	Howard	plate_4	2023-09-09_Howard_plate_4
+Sat Sep 09 2023 (P5)	2023-09-09	Howard	plate_5	2023-09-09_Howard_plate_5
+Sat Sep 09 2023 (P6)	2023-09-09	Howard	plate_6	2023-09-09_Howard_plate_6
+Sat Sep 09 2023 (P7)	2023-09-09	Howard	plate_7	2023-09-09_Howard_plate_7
+Sat Sep 16 2023 (P1)	2023-09-16	Howard	plate_1	2023-09-16_Howard_plate_1
+Sat Sep 16 2023 (P2)	2023-09-16	Howard	plate_2	2023-09-16_Howard_plate_2
+Sat Sep 16 2023 (P3)	2023-09-16	Howard	plate_3	2023-09-16_Howard_plate_3
+Sat Sep 16 2023 (P4)	2023-09-16	Howard	plate_4	2023-09-16_Howard_plate_4
+Sat Sep 16 2023 (P5)	2023-09-16	Howard	plate_5	2023-09-16_Howard_plate_5
+Sat Sep 16 2023 (P6)	2023-09-16	Howard	plate_6	2023-09-16_Howard_plate_6
+Sun Dec 24 2023 (P1)	2023-12-24	Howard	plate_1	2023-12-24_Howard_plate_1
+Sun Dec 24 2023 (P2)	2023-12-24	Howard	plate_2	2023-12-24_Howard_plate_2
+Sun Dec 24 2023 (P3)	2023-12-24	Howard	plate_3	2023-12-24_Howard_plate_3
+Sun Dec 24 2023 (P4)	2023-12-24	Howard	plate_4	2023-12-24_Howard_plate_4
+Sun Dec 24 2023 (P5)	2023-12-24	Howard	plate_5	2023-12-24_Howard_plate_5
+Sun Dec 24 2023 (P6)	2023-12-24	Howard	plate_6	2023-12-24_Howard_plate_6
+Sun Dec 24 2023 (P7)	2023-12-24	Howard	plate_7	2023-12-24_Howard_plate_7
+Sun Oct 29 2023 (P1)	2023-10-29	Howard	plate_1	2023-10-29_Howard_plate_1
+Sun Oct 29 2023 (P2)	2023-10-29	Howard	plate_2	2023-10-29_Howard_plate_2
+Sun Oct 29 2023 (P3)	2023-10-29	Howard	plate_3	2023-10-29_Howard_plate_3
+Sun Oct 29 2023 (P4)	2023-10-29	Howard	plate_4	2023-10-29_Howard_plate_4
+Sun Oct 29 2023 (P5)	2023-10-29	Howard	plate_5	2023-10-29_Howard_plate_5
+Sun Oct 29 2023 (P6)	2023-10-29	Howard	plate_6	2023-10-29_Howard_plate_6
+Sun Oct 29 2023 (P7)	2023-10-29	Howard	plate_7	2023-10-29_Howard_plate_7
+Sun Oct 29 2023 (P8)	2023-10-29	Howard	plate_8	2023-10-29_Howard_plate_8
+Thu Dec 21 2023 (P1)	2023-12-21	Howard	plate_1	2023-12-21_Howard_plate_1
+Thu Dec 21 2023 (P2)	2023-12-21	Howard	plate_2	2023-12-21_Howard_plate_2
+Thu Dec 21 2023 (P3)	2023-12-21	Howard	plate_3	2023-12-21_Howard_plate_3
+Thu Dec 21 2023 (P4)	2023-12-21	Howard	plate_4	2023-12-21_Howard_plate_4
+Thu Sep 07 2023 (P1)	2023-09-07	Howard	plate_1	2023-09-07_Howard_plate_1
+Thu Sep 07 2023 (P2)	2023-09-07	Howard	plate_2	2023-09-07_Howard_plate_2
+Thu Sep 07 2023 (P3)	2023-09-07	Howard	plate_3	2023-09-07_Howard_plate_3
+Thu Sep 07 2023 (P4)	2023-09-07	Howard	plate_4	2023-09-07_Howard_plate_4
+Thu Sep 07 2023 (P5)	2023-09-07	Howard	plate_5	2023-09-07_Howard_plate_5
+Thu Sep 07 2023 (P6)	2023-09-07	Howard	plate_6	2023-09-07_Howard_plate_6
+Thu Sep 14 2023 (P1)	2023-09-14	Howard	plate_1	2023-09-14_Howard_plate_1
+Thu Sep 14 2023 (P2)	2023-09-14	Howard	plate_2	2023-09-14_Howard_plate_2
+Thu Sep 14 2023 (P3)	2023-09-14	Howard	plate_3	2023-09-14_Howard_plate_3
+Thu Sep 14 2023 (P4)	2023-09-14	Howard	plate_4	2023-09-14_Howard_plate_4
+Thu Sep 14 2023 (P5)	2023-09-14	Howard	plate_5	2023-09-14_Howard_plate_5
+Thu Sep 14 2023 (P6)	2023-09-14	Howard	plate_6	2023-09-14_Howard_plate_6
+Thu Sep 14 2023 (P7)	2023-09-14	Howard	plate_7	2023-09-14_Howard_plate_7
+Thu Sep 14 2023 (P8)	2023-09-14	Howard	plate_8	2023-09-14_Howard_plate_8
+Thu Sep 28 2023 (P1)	2023-09-28	Howard	plate_1	2023-09-28_Howard_plate_1
+Thu Sep 28 2023 (P2)	2023-09-28	Howard	plate_2	2023-09-28_Howard_plate_2
+Thu Sep 28 2023 (P3)	2023-09-28	Howard	plate_3	2023-09-28_Howard_plate_3
+Thu Sep 28 2023 (P4)	2023-09-28	Howard	plate_4	2023-09-28_Howard_plate_4
+Thu Sep 28 2023 (P5)	2023-09-28	Howard	plate_5	2023-09-28_Howard_plate_5
+Thu Sep 28 2023 (P6)	2023-09-28	Howard	plate_6	2023-09-28_Howard_plate_6
+Thu Sep 28 2023 (P7)	2023-09-28	Howard	plate_7	2023-09-28_Howard_plate_7
+Tue Aug 08 2023 (P1)	2023-08-08	Howard	plate_1	2023-08-08_Howard_plate_1
+Tue Aug 08 2023 (P2)	2023-08-08	Howard	plate_2	2023-08-08_Howard_plate_2
+Tue Aug 08 2023 (P3)	2023-08-08	Howard	plate_3	2023-08-08_Howard_plate_3
+Tue Aug 08 2023 (P4)	2023-08-08	Howard	plate_4	2023-08-08_Howard_plate_4
+Tue Aug 08 2023 (P5)	2023-08-08	Howard	plate_5	2023-08-08_Howard_plate_5
+Tue Aug 15 2023 (P1)	2023-08-15	Howard	plate_1	2023-08-15_Howard_plate_1
+Tue Aug 15 2023 (P2)	2023-08-15	Howard	plate_2	2023-08-15_Howard_plate_2
+Tue Aug 15 2023 (P3)	2023-08-15	Howard	plate_3	2023-08-15_Howard_plate_3
+Tue Aug 15 2023 (P4)	2023-08-15	Howard	plate_4	2023-08-15_Howard_plate_4
+Tue Nov 07 2023 (P1)	2023-11-07	Howard	plate_1	2023-11-07_Howard_plate_1
+Tue Nov 07 2023 (P2)	2023-11-07	Howard	plate_2	2023-11-07_Howard_plate_2
+Tue Nov 07 2023 (P3)	2023-11-07	Howard	plate_3	2023-11-07_Howard_plate_3
+Tue Nov 07 2023 (P4)	2023-11-07	Howard	plate_4	2023-11-07_Howard_plate_4
+Tue Nov 07 2023 (P5)	2023-11-07	Howard	plate_5	2023-11-07_Howard_plate_5
+Tue Nov 07 2023 (P6)	2023-11-07	Howard	plate_6	2023-11-07_Howard_plate_6
+Tue Nov 07 2023 (P7)	2023-11-07	Howard	plate_7	2023-11-07_Howard_plate_7
+Tue Sep 26 2023 (P1)	2023-09-26	Howard	plate_1	2023-09-26_Howard_plate_1
+Tue Sep 26 2023 (P2)	2023-09-26	Howard	plate_2	2023-09-26_Howard_plate_2
+Tue Sep 26 2023 (P3)	2023-09-26	Howard	plate_3	2023-09-26_Howard_plate_3
+Tue Sep 26 2023 (P4)	2023-09-26	Howard	plate_4	2023-09-26_Howard_plate_4
+Tue Sep 26 2023 (P5)	2023-09-26	Howard	plate_5	2023-09-26_Howard_plate_5
+Tue Sep 26 2023 (P6)	2023-09-26	Howard	plate_6	2023-09-26_Howard_plate_6
+Tue Sep 26 2023 (P7)	2023-09-26	Howard	plate_7	2023-09-26_Howard_plate_7
+Wed Aug 23 2023 (P1)	2023-08-23	Howard	plate_1	2023-08-23_Howard_plate_1
+Wed Aug 23 2023 (P2)	2023-08-23	Howard	plate_2	2023-08-23_Howard_plate_2
+Wed Aug 23 2023 (P3)	2023-08-23	Howard	plate_3	2023-08-23_Howard_plate_3
+Wed Aug 23 2023 (P4)	2023-08-23	Howard	plate_4	2023-08-23_Howard_plate_4
+Wed Aug 23 2023 (P5)	2023-08-23	Howard	plate_5	2023-08-23_Howard_plate_5
+Wed Aug 23 2023 (P6)	2023-08-23	Howard	plate_6	2023-08-23_Howard_plate_6
+Wed Aug 23 2023 (P7)	2023-08-23	Howard	plate_7	2023-08-23_Howard_plate_7
+Wed Aug 23 2023 (P8)	2023-08-23	Howard	plate_8	2023-08-23_Howard_plate_8
+Wed Nov 15 2023 (P1)	2023-11-15	Howard	plate_1	2023-11-15_Howard_plate_1
+Wed Nov 15 2023 (P2)	2023-11-15	Howard	plate_2	2023-11-15_Howard_plate_2
+Wed Nov 15 2023 (P3)	2023-11-15	Howard	plate_3	2023-11-15_Howard_plate_3
+Wed Nov 15 2023 (P4)	2023-11-15	Howard	plate_4	2023-11-15_Howard_plate_4
+Wed Nov 15 2023 (P5)	2023-11-15	Howard	plate_5	2023-11-15_Howard_plate_5
+Wed Nov 15 2023 (P6)	2023-11-15	Howard	plate_6	2023-11-15_Howard_plate_6
+Wed Nov 15 2023 (P7)	2023-11-15	Howard	plate_7	2023-11-15_Howard_plate_7
+Wed Nov 15 2023 (P8)	2023-11-15	Howard	plate_8	2023-11-15_Howard_plate_8
+Wed Oct 04 2023 (P1)	2023-10-04	Howard	plate_1	2023-10-04_Howard_plate_1
+Wed Oct 04 2023 (P2)	2023-10-04	Howard	plate_2	2023-10-04_Howard_plate_2
+Wed Oct 04 2023 (P3)	2023-10-04	Howard	plate_3	2023-10-04_Howard_plate_3
+Wed Oct 04 2023 (P4)	2023-10-04	Howard	plate_4	2023-10-04_Howard_plate_4
+Wed Oct 04 2023 (P5)	2023-10-04	Howard	plate_5	2023-10-04_Howard_plate_5
+Wed Oct 04 2023 (P6)	2023-10-04	Howard	plate_6	2023-10-04_Howard_plate_6
+Wed Oct 25 2023 (P1)	2023-10-25	Howard	plate_1	2023-10-25_Howard_plate_1
+Wed Oct 25 2023 (P2)	2023-10-25	Howard	plate_2	2023-10-25_Howard_plate_2
+Wed Oct 25 2023 (P3)	2023-10-25	Howard	plate_3	2023-10-25_Howard_plate_3
+Wed Oct 25 2023 (P4)	2023-10-25	Howard	plate_4	2023-10-25_Howard_plate_4
+Wed Oct 25 2023 (P5)	2023-10-25	Howard	plate_5	2023-10-25_Howard_plate_5
+Wed Sep 13 2023 (P1)	2023-09-13	Howard	plate_1	2023-09-13_Howard_plate_1
+Wed Sep 13 2023 (P2)	2023-09-13	Howard	plate_2	2023-09-13_Howard_plate_2
+Wed Sep 13 2023 (P3)	2023-09-13	Howard	plate_3	2023-09-13_Howard_plate_3
+Wed Sep 13 2023 (P4)	2023-09-13	Howard	plate_4	2023-09-13_Howard_plate_4
+Wed Sep 13 2023 (P5)	2023-09-13	Howard	plate_5	2023-09-13_Howard_plate_5
+Wed Sep 13 2023 (P6)	2023-09-13	Howard	plate_6	2023-09-13_Howard_plate_6
+Wed Sep 13 2023 (P7)	2023-09-13	Howard	plate_7	2023-09-13_Howard_plate_7
+Fri Apr 19 2024 (P1)	2024-04-19	HowardNew	plate_1	2024-04-19_HowardNew_plate_1
+Fri Apr 19 2024 (P2)	2024-04-19	HowardNew	plate_2	2024-04-19_HowardNew_plate_2
+Fri Apr 19 2024 (P3)	2024-04-19	HowardNew	plate_3	2024-04-19_HowardNew_plate_3
+Fri Apr 19 2024 (P4)	2024-04-19	HowardNew	plate_4	2024-04-19_HowardNew_plate_4
+Fri Apr 19 2024 (P5)	2024-04-19	HowardNew	plate_5	2024-04-19_HowardNew_plate_5
+Fri Apr 26 2024 (P1)	2024-04-26	HowardNew	plate_1	2024-04-26_HowardNew_plate_1
+Fri Apr 26 2024 (P2)	2024-04-26	HowardNew	plate_2	2024-04-26_HowardNew_plate_2
+Fri Apr 26 2024 (P3)	2024-04-26	HowardNew	plate_3	2024-04-26_HowardNew_plate_3
+Fri Apr 26 2024 (P4)	2024-04-26	HowardNew	plate_4	2024-04-26_HowardNew_plate_4
+Fri Apr 26 2024 (P5)	2024-04-26	HowardNew	plate_5	2024-04-26_HowardNew_plate_5
+Fri Apr 26 2024 (P6)	2024-04-26	HowardNew	plate_6	2024-04-26_HowardNew_plate_6
+Fri Apr 26 2024 (P7)	2024-04-26	HowardNew	plate_7	2024-04-26_HowardNew_plate_7
+Fri Jul 12 2024 (P1)	2024-07-12	HowardNew	plate_1	2024-07-12_HowardNew_plate_1
+Fri Jul 12 2024 (P2)	2024-07-12	HowardNew	plate_2	2024-07-12_HowardNew_plate_2
+Fri Jul 12 2024 (P3)	2024-07-12	HowardNew	plate_3	2024-07-12_HowardNew_plate_3
+Fri Jul 12 2024 (P4)	2024-07-12	HowardNew	plate_4	2024-07-12_HowardNew_plate_4
+Fri Jul 12 2024 (P5)	2024-07-12	HowardNew	plate_5	2024-07-12_HowardNew_plate_5
+Fri Jul 12 2024 (P6)	2024-07-12	HowardNew	plate_6	2024-07-12_HowardNew_plate_6
+Fri Jun 07 2024 (P1)	2024-06-07	HowardNew	plate_1	2024-06-07_HowardNew_plate_1
+Fri Jun 07 2024 (P2)	2024-06-07	HowardNew	plate_2	2024-06-07_HowardNew_plate_2
+Fri Jun 07 2024 (P3)	2024-06-07	HowardNew	plate_3	2024-06-07_HowardNew_plate_3
+Fri Jun 07 2024 (P4)	2024-06-07	HowardNew	plate_4	2024-06-07_HowardNew_plate_4
+Fri Jun 07 2024 (P5)	2024-06-07	HowardNew	plate_5	2024-06-07_HowardNew_plate_5
+Fri Jun 07 2024 (P6)	2024-06-07	HowardNew	plate_6	2024-06-07_HowardNew_plate_6
+Fri May 17 2024 (P1)	2024-05-17	HowardNew	plate_1	2024-05-17_HowardNew_plate_1
+Fri May 17 2024 (P2)	2024-05-17	HowardNew	plate_2	2024-05-17_HowardNew_plate_2
+Fri May 17 2024 (P3)	2024-05-17	HowardNew	plate_3	2024-05-17_HowardNew_plate_3
+Fri May 17 2024 (P4)	2024-05-17	HowardNew	plate_4	2024-05-17_HowardNew_plate_4
+Fri May 17 2024 (P5)	2024-05-17	HowardNew	plate_5	2024-05-17_HowardNew_plate_5
+Fri May 17 2024 (P6)	2024-05-17	HowardNew	plate_6	2024-05-17_HowardNew_plate_6
+Fri May 17 2024 (P7)	2024-05-17	HowardNew	plate_7	2024-05-17_HowardNew_plate_7
+Sat Jul 06 2024 (P1)	2024-07-06	HowardNew	plate_1	2024-07-06_HowardNew_plate_1
+Sat Jul 06 2024 (P2)	2024-07-06	HowardNew	plate_2	2024-07-06_HowardNew_plate_2
+Sat Jul 06 2024 (P3)	2024-07-06	HowardNew	plate_3	2024-07-06_HowardNew_plate_3
+Sat Jul 06 2024 (P4)	2024-07-06	HowardNew	plate_4	2024-07-06_HowardNew_plate_4
+Sat Jul 06 2024 (P5)	2024-07-06	HowardNew	plate_5	2024-07-06_HowardNew_plate_5
+Sat Jul 06 2024 (P6)	2024-07-06	HowardNew	plate_6	2024-07-06_HowardNew_plate_6
+Sat Jul 06 2024 (P7)	2024-07-06	HowardNew	plate_7	2024-07-06_HowardNew_plate_7
+Sat Jun 01 2024 (P1)	2024-06-01	HowardNew	plate_1	2024-06-01_HowardNew_plate_1
+Sat Jun 01 2024 (P2)	2024-06-01	HowardNew	plate_2	2024-06-01_HowardNew_plate_2
+Sat Jun 01 2024 (P3)	2024-06-01	HowardNew	plate_3	2024-06-01_HowardNew_plate_3
+Sat Jun 01 2024 (P4)	2024-06-01	HowardNew	plate_4	2024-06-01_HowardNew_plate_4
+Sat Jun 01 2024 (P5)	2024-06-01	HowardNew	plate_5	2024-06-01_HowardNew_plate_5
+Sat Jun 01 2024 (P6)	2024-06-01	HowardNew	plate_6	2024-06-01_HowardNew_plate_6
+Sat Jun 01 2024 (P7)	2024-06-01	HowardNew	plate_7	2024-06-01_HowardNew_plate_7
+Sat Jun 01 2024 (P8)	2024-06-01	HowardNew	plate_8	2024-06-01_HowardNew_plate_8
+Sat Jun 29 2024 (P1)	2024-06-29	HowardNew	plate_1	2024-06-29_HowardNew_plate_1
+Sat Jun 29 2024 (P2)	2024-06-29	HowardNew	plate_2	2024-06-29_HowardNew_plate_2
+Sat Jun 29 2024 (P3)	2024-06-29	HowardNew	plate_3	2024-06-29_HowardNew_plate_3
+Sat Jun 29 2024 (P4)	2024-06-29	HowardNew	plate_4	2024-06-29_HowardNew_plate_4
+Sat Jun 29 2024 (P5)	2024-06-29	HowardNew	plate_5	2024-06-29_HowardNew_plate_5
+Sat Jun 29 2024 (P6)	2024-06-29	HowardNew	plate_6	2024-06-29_HowardNew_plate_6
+Thu Jul 04 2024 (P1)	2024-07-04	HowardNew	plate_1	2024-07-04_HowardNew_plate_1
+Thu Jul 04 2024 (P2)	2024-07-04	HowardNew	plate_2	2024-07-04_HowardNew_plate_2
+Thu Jul 04 2024 (P3)	2024-07-04	HowardNew	plate_3	2024-07-04_HowardNew_plate_3
+Thu Jul 04 2024 (P4)	2024-07-04	HowardNew	plate_4	2024-07-04_HowardNew_plate_4
+Thu Jul 04 2024 (P5)	2024-07-04	HowardNew	plate_5	2024-07-04_HowardNew_plate_5
+Thu Jul 04 2024 (P6)	2024-07-04	HowardNew	plate_6	2024-07-04_HowardNew_plate_6
+Thu Jul 04 2024 (P7)	2024-07-04	HowardNew	plate_7	2024-07-04_HowardNew_plate_7
+Thu Jul 04 2024 (P8)	2024-07-04	HowardNew	plate_8	2024-07-04_HowardNew_plate_8
+Thu Jun 13 2024 (P1)	2024-06-13	HowardNew	plate_1	2024-06-13_HowardNew_plate_1
+Thu Jun 13 2024 (P2)	2024-06-13	HowardNew	plate_2	2024-06-13_HowardNew_plate_2
+Thu Jun 13 2024 (P3)	2024-06-13	HowardNew	plate_3	2024-06-13_HowardNew_plate_3
+Thu Jun 13 2024 (P4)	2024-06-13	HowardNew	plate_4	2024-06-13_HowardNew_plate_4
+Thu Jun 13 2024 (P5)	2024-06-13	HowardNew	plate_5	2024-06-13_HowardNew_plate_5
+Thu Jun 27 2024 (P1)	2024-06-27	HowardNew	plate_1	2024-06-27_HowardNew_plate_1
+Thu Jun 27 2024 (P2)	2024-06-27	HowardNew	plate_2	2024-06-27_HowardNew_plate_2
+Thu Jun 27 2024 (P3)	2024-06-27	HowardNew	plate_3	2024-06-27_HowardNew_plate_3
+Thu Jun 27 2024 (P4)	2024-06-27	HowardNew	plate_4	2024-06-27_HowardNew_plate_4
+Thu May 16 2024 (P1)	2024-05-16	HowardNew	plate_1	2024-05-16_HowardNew_plate_1
+Thu May 16 2024 (P2)	2024-05-16	HowardNew	plate_2	2024-05-16_HowardNew_plate_2
+Thu May 16 2024 (P3)	2024-05-16	HowardNew	plate_3	2024-05-16_HowardNew_plate_3
+Thu May 16 2024 (P4)	2024-05-16	HowardNew	plate_4	2024-05-16_HowardNew_plate_4
+Thu May 23 2024 (P1)	2024-05-23	HowardNew	plate_1	2024-05-23_HowardNew_plate_1
+Thu May 23 2024 (P2)	2024-05-23	HowardNew	plate_2	2024-05-23_HowardNew_plate_2
+Thu May 23 2024 (P3)	2024-05-23	HowardNew	plate_3	2024-05-23_HowardNew_plate_3
+Thu May 23 2024 (P4)	2024-05-23	HowardNew	plate_4	2024-05-23_HowardNew_plate_4
+Tue Apr 16 2024 (P1)	2024-04-16	HowardNew	plate_1	2024-04-16_HowardNew_plate_1
+Tue Apr 16 2024 (P2)	2024-04-16	HowardNew	plate_2	2024-04-16_HowardNew_plate_2
+Tue Apr 16 2024 (P3)	2024-04-16	HowardNew	plate_3	2024-04-16_HowardNew_plate_3
+Tue Apr 16 2024 (P4)	2024-04-16	HowardNew	plate_4	2024-04-16_HowardNew_plate_4
+Tue Apr 16 2024 (P5)	2024-04-16	HowardNew	plate_5	2024-04-16_HowardNew_plate_5
+Tue Jul 02 2024 (P1)	2024-07-02	HowardNew	plate_1	2024-07-02_HowardNew_plate_1
+Tue Jul 02 2024 (P2)	2024-07-02	HowardNew	plate_2	2024-07-02_HowardNew_plate_2
+Tue Jul 02 2024 (P3)	2024-07-02	HowardNew	plate_3	2024-07-02_HowardNew_plate_3
+Tue Jul 02 2024 (P4)	2024-07-02	HowardNew	plate_4	2024-07-02_HowardNew_plate_4
+Tue Jul 02 2024 (P5)	2024-07-02	HowardNew	plate_5	2024-07-02_HowardNew_plate_5
+Tue Jul 02 2024 (P6)	2024-07-02	HowardNew	plate_6	2024-07-02_HowardNew_plate_6
+Tue Jul 30 2024 (P1)	2024-07-30	HowardNew	plate_1	2024-07-30_HowardNew_plate_1
+Tue Jul 30 2024 (P2)	2024-07-30	HowardNew	plate_2	2024-07-30_HowardNew_plate_2
+Tue Jul 30 2024 (P3)	2024-07-30	HowardNew	plate_3	2024-07-30_HowardNew_plate_3
+Tue Jul 30 2024 (P4)	2024-07-30	HowardNew	plate_4	2024-07-30_HowardNew_plate_4
+Tue Jul 30 2024 (P5)	2024-07-30	HowardNew	plate_5	2024-07-30_HowardNew_plate_5
+Tue Jun 25 2024 (P1)	2024-06-25	HowardNew	plate_1	2024-06-25_HowardNew_plate_1
+Tue Jun 25 2024 (P2)	2024-06-25	HowardNew	plate_2	2024-06-25_HowardNew_plate_2
+Tue Jun 25 2024 (P3)	2024-06-25	HowardNew	plate_3	2024-06-25_HowardNew_plate_3
+Tue Jun 25 2024 (P4)	2024-06-25	HowardNew	plate_4	2024-06-25_HowardNew_plate_4
+Tue Jun 25 2024 (P5)	2024-06-25	HowardNew	plate_5	2024-06-25_HowardNew_plate_5
+Tue Jun 25 2024 (P6)	2024-06-25	HowardNew	plate_6	2024-06-25_HowardNew_plate_6
+Tue Jun 25 2024 (P7)	2024-06-25	HowardNew	plate_7	2024-06-25_HowardNew_plate_7
+Wed Jul 03 2024 (P1)	2024-07-03	HowardNew	plate_1	2024-07-03_HowardNew_plate_1
+Wed Jul 03 2024 (P2)	2024-07-03	HowardNew	plate_2	2024-07-03_HowardNew_plate_2
+Wed Jul 03 2024 (P3)	2024-07-03	HowardNew	plate_3	2024-07-03_HowardNew_plate_3
+Wed Jul 03 2024 (P4)	2024-07-03	HowardNew	plate_4	2024-07-03_HowardNew_plate_4
+Wed Jul 03 2024 (P5)	2024-07-03	HowardNew	plate_5	2024-07-03_HowardNew_plate_5
+Wed Jul 03 2024 (P6)	2024-07-03	HowardNew	plate_6	2024-07-03_HowardNew_plate_6
+Wed Jul 03 2024 (P7)	2024-07-03	HowardNew	plate_7	2024-07-03_HowardNew_plate_7
+Wed Jul 03 2024 (P8)	2024-07-03	HowardNew	plate_8	2024-07-03_HowardNew_plate_8
+Wed May 29 2024 (P1)	2024-05-29	HowardNew	plate_1	2024-05-29_HowardNew_plate_1
+Wed May 29 2024 (P2)	2024-05-29	HowardNew	plate_2	2024-05-29_HowardNew_plate_2
+Wed May 29 2024 (P3)	2024-05-29	HowardNew	plate_3	2024-05-29_HowardNew_plate_3
+Wed May 29 2024 (P4)	2024-05-29	HowardNew	plate_4	2024-05-29_HowardNew_plate_4
+2023-03-14 plate_1	2023-03-14	Vilanova	plate_1	2023-03-14_Vilanova_plate_1
+2023-03-14 plate_2	2023-03-14	Vilanova	plate_2	2023-03-14_Vilanova_plate_2
+2023-03-14 plate_3	2023-03-14	Vilanova	plate_3	2023-03-14_Vilanova_plate_3
+2023-03-14 plate_4	2023-03-14	Vilanova	plate_4	2023-03-14_Vilanova_plate_4
+2023-03-17 plate_1	2023-03-17	Vilanova	plate_1	2023-03-17_Vilanova_plate_1
+2023-03-17 plate_2	2023-03-17	Vilanova	plate_2	2023-03-17_Vilanova_plate_2
+2023-03-17 plate_3	2023-03-17	Vilanova	plate_3	2023-03-17_Vilanova_plate_3
+2023-03-17 plate_4	2023-03-17	Vilanova	plate_4	2023-03-17_Vilanova_plate_4
+2023-03-17 plate_5	2023-03-17	Vilanova	plate_5	2023-03-17_Vilanova_plate_5
+2023-03-17 plate_6	2023-03-17	Vilanova	plate_6	2023-03-17_Vilanova_plate_6
+2023-03-17 plate_7	2023-03-17	Vilanova	plate_7	2023-03-17_Vilanova_plate_7
+2023-03-20 plate_1	2023-03-20	Vilanova	plate_1	2023-03-20_Vilanova_plate_1
+2023-03-20 plate_2	2023-03-20	Vilanova	plate_2	2023-03-20_Vilanova_plate_2
+2023-03-20 plate_3	2023-03-20	Vilanova	plate_3	2023-03-20_Vilanova_plate_3
+2023-03-20 plate_4	2023-03-20	Vilanova	plate_4	2023-03-20_Vilanova_plate_4
+2023-03-20 plate_5	2023-03-20	Vilanova	plate_5	2023-03-20_Vilanova_plate_5
+2023-03-21 plate_1	2023-03-21	Vilanova	plate_1	2023-03-21_Vilanova_plate_1
+2023-03-21 plate_2	2023-03-21	Vilanova	plate_2	2023-03-21_Vilanova_plate_2
+2023-03-21 plate_3	2023-03-21	Vilanova	plate_3	2023-03-21_Vilanova_plate_3
+2023-03-21 plate_4	2023-03-21	Vilanova	plate_4	2023-03-21_Vilanova_plate_4
+2023-03-21 plate_5	2023-03-21	Vilanova	plate_5	2023-03-21_Vilanova_plate_5
+2023-03-21 plate_6	2023-03-21	Vilanova	plate_6	2023-03-21_Vilanova_plate_6
+2023-03-30 plate_1	2023-03-30	Vilanova	plate_1	2023-03-30_Vilanova_plate_1
+2023-03-30 plate_2	2023-03-30	Vilanova	plate_2	2023-03-30_Vilanova_plate_2
+2023-03-30 plate_3	2023-03-30	Vilanova	plate_3	2023-03-30_Vilanova_plate_3
+2023-03-30 plate_4	2023-03-30	Vilanova	plate_4	2023-03-30_Vilanova_plate_4
+2023-03-30 plate_5	2023-03-30	Vilanova	plate_5	2023-03-30_Vilanova_plate_5
+2023-03-30 plate_6	2023-03-30	Vilanova	plate_6	2023-03-30_Vilanova_plate_6
+2023-03-30 plate_7	2023-03-30	Vilanova	plate_7	2023-03-30_Vilanova_plate_7
+2023-04-01 plate_1	2023-04-01	Vilanova	plate_1	2023-04-01_Vilanova_plate_1
+2023-04-01 plate_2	2023-04-01	Vilanova	plate_2	2023-04-01_Vilanova_plate_2
+2023-04-01 plate_3	2023-04-01	Vilanova	plate_3	2023-04-01_Vilanova_plate_3
+2023-04-01 plate_4	2023-04-01	Vilanova	plate_4	2023-04-01_Vilanova_plate_4
+2023-04-01 plate_5	2023-04-01	Vilanova	plate_5	2023-04-01_Vilanova_plate_5
+2023-04-01 plate_6	2023-04-01	Vilanova	plate_6	2023-04-01_Vilanova_plate_6
+2023-04-01 plate_7	2023-04-01	Vilanova	plate_7	2023-04-01_Vilanova_plate_7
+2023-04-09 plate_1	2023-04-09	Vilanova	plate_1	2023-04-09_Vilanova_plate_1
+2023-04-09 plate_2	2023-04-09	Vilanova	plate_2	2023-04-09_Vilanova_plate_2
+2023-04-09 plate_3	2023-04-09	Vilanova	plate_3	2023-04-09_Vilanova_plate_3
+2023-04-09 plate_4	2023-04-09	Vilanova	plate_4	2023-04-09_Vilanova_plate_4
+2023-04-09 plate_5	2023-04-09	Vilanova	plate_5	2023-04-09_Vilanova_plate_5
+2023-04-16 plate_1	2023-04-16	Vilanova	plate_1	2023-04-16_Vilanova_plate_1
+2023-04-16 plate_2	2023-04-16	Vilanova	plate_2	2023-04-16_Vilanova_plate_2
+2023-04-16 plate_3	2023-04-16	Vilanova	plate_3	2023-04-16_Vilanova_plate_3
+2023-04-16 plate_4	2023-04-16	Vilanova	plate_4	2023-04-16_Vilanova_plate_4
+2023-04-16 plate_5	2023-04-16	Vilanova	plate_5	2023-04-16_Vilanova_plate_5
+2023-04-16 plate_6	2023-04-16	Vilanova	plate_6	2023-04-16_Vilanova_plate_6
+2023-04-20 plate_1	2023-04-20	Vilanova	plate_1	2023-04-20_Vilanova_plate_1
+2023-04-20 plate_2	2023-04-20	Vilanova	plate_2	2023-04-20_Vilanova_plate_2
+2023-04-20 plate_3	2023-04-20	Vilanova	plate_3	2023-04-20_Vilanova_plate_3
+2023-04-20 plate_4	2023-04-20	Vilanova	plate_4	2023-04-20_Vilanova_plate_4
+2023-04-20 plate_5	2023-04-20	Vilanova	plate_5	2023-04-20_Vilanova_plate_5
+2023-04-27 plate_1	2023-04-27	Vilanova	plate_1	2023-04-27_Vilanova_plate_1
+2023-04-27 plate_2	2023-04-27	Vilanova	plate_2	2023-04-27_Vilanova_plate_2
+2023-04-27 plate_3	2023-04-27	Vilanova	plate_3	2023-04-27_Vilanova_plate_3
+2023-04-27 plate_4	2023-04-27	Vilanova	plate_4	2023-04-27_Vilanova_plate_4
+2023-04-27 plate_5	2023-04-27	Vilanova	plate_5	2023-04-27_Vilanova_plate_5
+2023-04-27 plate_6	2023-04-27	Vilanova	plate_6	2023-04-27_Vilanova_plate_6
+2023-04-27 plate_7	2023-04-27	Vilanova	plate_7	2023-04-27_Vilanova_plate_7
+2023-08-09 plate_1	2023-08-09	Vilanova	plate_1	2023-08-09_Vilanova_plate_1
+2023-08-09 plate_2	2023-08-09	Vilanova	plate_2	2023-08-09_Vilanova_plate_2
+2023-08-09 plate_3	2023-08-09	Vilanova	plate_3	2023-08-09_Vilanova_plate_3
+2023-08-09 plate_4	2023-08-09	Vilanova	plate_4	2023-08-09_Vilanova_plate_4
+2023-08-09 plate_5	2023-08-09	Vilanova	plate_5	2023-08-09_Vilanova_plate_5
+2023-08-09 plate_6	2023-08-09	Vilanova	plate_6	2023-08-09_Vilanova_plate_6
+2023-08-10 plate_1	2023-08-10	Vilanova	plate_1	2023-08-10_Vilanova_plate_1
+2023-08-10 plate_2	2023-08-10	Vilanova	plate_2	2023-08-10_Vilanova_plate_2
+2023-08-10 plate_3	2023-08-10	Vilanova	plate_3	2023-08-10_Vilanova_plate_3
+2023-08-10 plate_4	2023-08-10	Vilanova	plate_4	2023-08-10_Vilanova_plate_4
+2023-08-10 plate_5	2023-08-10	Vilanova	plate_5	2023-08-10_Vilanova_plate_5
+2023-08-10 plate_6	2023-08-10	Vilanova	plate_6	2023-08-10_Vilanova_plate_6
+2023-08-10 plate_7	2023-08-10	Vilanova	plate_7	2023-08-10_Vilanova_plate_7
+2023-08-13 plate_1	2023-08-13	Vilanova	plate_1	2023-08-13_Vilanova_plate_1
+2023-08-13 plate_2	2023-08-13	Vilanova	plate_2	2023-08-13_Vilanova_plate_2
+2023-08-13 plate_3	2023-08-13	Vilanova	plate_3	2023-08-13_Vilanova_plate_3
+2023-08-13 plate_4	2023-08-13	Vilanova	plate_4	2023-08-13_Vilanova_plate_4
+2023-08-13 plate_5	2023-08-13	Vilanova	plate_5	2023-08-13_Vilanova_plate_5
+2023-08-13 plate_6	2023-08-13	Vilanova	plate_6	2023-08-13_Vilanova_plate_6
+2023-08-17 plate_1	2023-08-17	Vilanova	plate_1	2023-08-17_Vilanova_plate_1
+2023-08-17 plate_2	2023-08-17	Vilanova	plate_2	2023-08-17_Vilanova_plate_2
+2023-08-17 plate_3	2023-08-17	Vilanova	plate_3	2023-08-17_Vilanova_plate_3
+2023-08-17 plate_4	2023-08-17	Vilanova	plate_4	2023-08-17_Vilanova_plate_4
+2023-08-17 plate_5	2023-08-17	Vilanova	plate_5	2023-08-17_Vilanova_plate_5
+2023-08-23 plate_1	2023-08-23	Vilanova	plate_1	2023-08-23_Vilanova_plate_1
+2023-08-23 plate_2	2023-08-23	Vilanova	plate_2	2023-08-23_Vilanova_plate_2
+2023-08-23 plate_3	2023-08-23	Vilanova	plate_3	2023-08-23_Vilanova_plate_3
+2023-08-23 plate_4	2023-08-23	Vilanova	plate_4	2023-08-23_Vilanova_plate_4
+2023-08-23 plate_5	2023-08-23	Vilanova	plate_5	2023-08-23_Vilanova_plate_5
+2023-09-29 plate_1	2023-09-29	Vilanova	plate_1	2023-09-29_Vilanova_plate_1
+2023-09-29 plate_2	2023-09-29	Vilanova	plate_2	2023-09-29_Vilanova_plate_2
+2023-09-29 plate_3	2023-09-29	Vilanova	plate_3	2023-09-29_Vilanova_plate_3
+2023-09-29 plate_4	2023-09-29	Vilanova	plate_4	2023-09-29_Vilanova_plate_4
+2023-09-29 plate_5	2023-09-29	Vilanova	plate_5	2023-09-29_Vilanova_plate_5
+2023-09-29 plate_6	2023-09-29	Vilanova	plate_6	2023-09-29_Vilanova_plate_6
+2023-09-29 plate_7	2023-09-29	Vilanova	plate_7	2023-09-29_Vilanova_plate_7
+2023-10-05 plate_1	2023-10-05	Vilanova	plate_1	2023-10-05_Vilanova_plate_1
+2023-10-05 plate_2	2023-10-05	Vilanova	plate_2	2023-10-05_Vilanova_plate_2
+2023-10-05 plate_3	2023-10-05	Vilanova	plate_3	2023-10-05_Vilanova_plate_3
+2023-10-05 plate_4	2023-10-05	Vilanova	plate_4	2023-10-05_Vilanova_plate_4
+2023-10-10 plate_1	2023-10-10	Vilanova	plate_1	2023-10-10_Vilanova_plate_1
+2023-10-10 plate_2	2023-10-10	Vilanova	plate_2	2023-10-10_Vilanova_plate_2
+2023-10-10 plate_3	2023-10-10	Vilanova	plate_3	2023-10-10_Vilanova_plate_3
+2023-10-10 plate_4	2023-10-10	Vilanova	plate_4	2023-10-10_Vilanova_plate_4
+2023-10-17 plate_1	2023-10-17	Vilanova	plate_1	2023-10-17_Vilanova_plate_1
+2023-10-17 plate_2	2023-10-17	Vilanova	plate_2	2023-10-17_Vilanova_plate_2
+2023-10-17 plate_3	2023-10-17	Vilanova	plate_3	2023-10-17_Vilanova_plate_3
+2023-10-17 plate_4	2023-10-17	Vilanova	plate_4	2023-10-17_Vilanova_plate_4
+2023-10-17 plate_5	2023-10-17	Vilanova	plate_5	2023-10-17_Vilanova_plate_5
+2023-10-17 plate_6	2023-10-17	Vilanova	plate_6	2023-10-17_Vilanova_plate_6
+2023-10-17 plate_7	2023-10-17	Vilanova	plate_7	2023-10-17_Vilanova_plate_7
+2023-10-17 plate_8	2023-10-17	Vilanova	plate_8	2023-10-17_Vilanova_plate_8
+2023-10-23 plate_1	2023-10-23	Vilanova	plate_1	2023-10-23_Vilanova_plate_1
+2023-10-23 plate_2	2023-10-23	Vilanova	plate_2	2023-10-23_Vilanova_plate_2
+2023-10-23 plate_3	2023-10-23	Vilanova	plate_3	2023-10-23_Vilanova_plate_3
+2023-10-23 plate_4	2023-10-23	Vilanova	plate_4	2023-10-23_Vilanova_plate_4
+2023-10-23 plate_5	2023-10-23	Vilanova	plate_5	2023-10-23_Vilanova_plate_5
+2023-10-23 plate_6	2023-10-23	Vilanova	plate_6	2023-10-23_Vilanova_plate_6
+2023-11-04 plate_1	2023-11-04	Vilanova	plate_1	2023-11-04_Vilanova_plate_1
+2023-11-04 plate_2	2023-11-04	Vilanova	plate_2	2023-11-04_Vilanova_plate_2
+2023-11-04 plate_3	2023-11-04	Vilanova	plate_3	2023-11-04_Vilanova_plate_3
+2023-11-04 plate_4	2023-11-04	Vilanova	plate_4	2023-11-04_Vilanova_plate_4
+2023-11-04 plate_5	2023-11-04	Vilanova	plate_5	2023-11-04_Vilanova_plate_5
+2023-11-04 plate_6	2023-11-04	Vilanova	plate_6	2023-11-04_Vilanova_plate_6
+2023-11-04 plate_7	2023-11-04	Vilanova	plate_7	2023-11-04_Vilanova_plate_7
+2023-11-10 plate_1	2023-11-10	Vilanova	plate_1	2023-11-10_Vilanova_plate_1
+2023-11-10 plate_2	2023-11-10	Vilanova	plate_2	2023-11-10_Vilanova_plate_2
+2023-11-10 plate_3	2023-11-10	Vilanova	plate_3	2023-11-10_Vilanova_plate_3
+2023-11-10 plate_4	2023-11-10	Vilanova	plate_4	2023-11-10_Vilanova_plate_4
+2023-11-10 plate_5	2023-11-10	Vilanova	plate_5	2023-11-10_Vilanova_plate_5
+2023-11-10 plate_6	2023-11-10	Vilanova	plate_6	2023-11-10_Vilanova_plate_6
+2023-11-10 plate_7	2023-11-10	Vilanova	plate_7	2023-11-10_Vilanova_plate_7
+2023-11-10 plate_8	2023-11-10	Vilanova	plate_8	2023-11-10_Vilanova_plate_8
+2023-11-20 plate_1	2023-11-20	Vilanova	plate_1	2023-11-20_Vilanova_plate_1
+2023-11-20 plate_2	2023-11-20	Vilanova	plate_2	2023-11-20_Vilanova_plate_2
+2023-11-20 plate_3	2023-11-20	Vilanova	plate_3	2023-11-20_Vilanova_plate_3
+2023-11-20 plate_4	2023-11-20	Vilanova	plate_4	2023-11-20_Vilanova_plate_4
+2023-11-20 plate_5	2023-11-20	Vilanova	plate_5	2023-11-20_Vilanova_plate_5
+2023-11-20 plate_6	2023-11-20	Vilanova	plate_6	2023-11-20_Vilanova_plate_6
+2023-11-20 plate_7	2023-11-20	Vilanova	plate_7	2023-11-20_Vilanova_plate_7
+2023-11-28 plate_1	2023-11-28	Vilanova	plate_1	2023-11-28_Vilanova_plate_1
+2023-11-28 plate_2	2023-11-28	Vilanova	plate_2	2023-11-28_Vilanova_plate_2
+2023-11-28 plate_3	2023-11-28	Vilanova	plate_3	2023-11-28_Vilanova_plate_3
+2023-11-28 plate_4	2023-11-28	Vilanova	plate_4	2023-11-28_Vilanova_plate_4
+2023-11-28 plate_5	2023-11-28	Vilanova	plate_5	2023-11-28_Vilanova_plate_5
+2023-12-01 plate_1	2023-12-01	Vilanova	plate_1	2023-12-01_Vilanova_plate_1
+2023-12-01 plate_2	2023-12-01	Vilanova	plate_2	2023-12-01_Vilanova_plate_2
+2023-12-01 plate_3	2023-12-01	Vilanova	plate_3	2023-12-01_Vilanova_plate_3
+2023-12-01 plate_4	2023-12-01	Vilanova	plate_4	2023-12-01_Vilanova_plate_4
+2023-12-01 plate_5	2023-12-01	Vilanova	plate_5	2023-12-01_Vilanova_plate_5
+2023-12-05 plate_1	2023-12-05	Vilanova	plate_1	2023-12-05_Vilanova_plate_1
+2023-12-05 plate_2	2023-12-05	Vilanova	plate_2	2023-12-05_Vilanova_plate_2
+2023-12-05 plate_3	2023-12-05	Vilanova	plate_3	2023-12-05_Vilanova_plate_3
+2023-12-05 plate_4	2023-12-05	Vilanova	plate_4	2023-12-05_Vilanova_plate_4
+2023-12-10 plate_1	2023-12-10	Vilanova	plate_1	2023-12-10_Vilanova_plate_1
+2023-12-10 plate_2	2023-12-10	Vilanova	plate_2	2023-12-10_Vilanova_plate_2
+2023-12-10 plate_3	2023-12-10	Vilanova	plate_3	2023-12-10_Vilanova_plate_3
+2023-12-10 plate_4	2023-12-10	Vilanova	plate_4	2023-12-10_Vilanova_plate_4
+2023-12-10 plate_5	2023-12-10	Vilanova	plate_5	2023-12-10_Vilanova_plate_5
+2023-12-10 plate_6	2023-12-10	Vilanova	plate_6	2023-12-10_Vilanova_plate_6
+2023-12-10 plate_7	2023-12-10	Vilanova	plate_7	2023-12-10_Vilanova_plate_7
+2023-12-16 plate_1	2023-12-16	Vilanova	plate_1	2023-12-16_Vilanova_plate_1
+2023-12-16 plate_2	2023-12-16	Vilanova	plate_2	2023-12-16_Vilanova_plate_2
+2023-12-16 plate_3	2023-12-16	Vilanova	plate_3	2023-12-16_Vilanova_plate_3
+2023-12-16 plate_4	2023-12-16	Vilanova	plate_4	2023-12-16_Vilanova_plate_4
+2023-12-20 plate_1	2023-12-20	Vilanova	plate_1	2023-12-20_Vilanova_plate_1
+2023-12-20 plate_2	2023-12-20	Vilanova	plate_2	2023-12-20_Vilanova_plate_2
+2023-12-20 plate_3	2023-12-20	Vilanova	plate_3	2023-12-20_Vilanova_plate_3
+2023-12-20 plate_4	2023-12-20	Vilanova	plate_4	2023-12-20_Vilanova_plate_4
+2023-12-20 plate_5	2023-12-20	Vilanova	plate_5	2023-12-20_Vilanova_plate_5
+2023-12-22 plate_1	2023-12-22	Vilanova	plate_1	2023-12-22_Vilanova_plate_1
+2023-12-22 plate_2	2023-12-22	Vilanova	plate_2	2023-12-22_Vilanova_plate_2
+2023-12-22 plate_3	2023-12-22	Vilanova	plate_3	2023-12-22_Vilanova_plate_3
+2023-12-22 plate_4	2023-12-22	Vilanova	plate_4	2023-12-22_Vilanova_plate_4
+2023-12-22 plate_5	2023-12-22	Vilanova	plate_5	2023-12-22_Vilanova_plate_5
+2023-12-22 plate_6	2023-12-22	Vilanova	plate_6	2023-12-22_Vilanova_plate_6
