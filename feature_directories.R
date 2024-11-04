@@ -84,4 +84,4 @@ combined_data <- combined_data %>% dplyr::select("date_lab_plate", "Title", "Dat
 
 #Save data
 
-vroom::vroom_write(combined_data, "~/tooling_up_systems_bio/ToolingSystemsBiology/normalized_dictionariy.csv")
+vroom::vroom_write(combined_data, "~/tooling_up_systems_bio/ToolingSystemsBiology/normalized_dictionary.csv")
