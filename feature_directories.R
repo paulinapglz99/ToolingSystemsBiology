@@ -1,6 +1,9 @@
 #Script for extract features of the csv
 
 setwd("~/tooling_up_systems_bio/ToolingSystemsBiology/")
+
+dir <- getwd()
+
 # Cargar las librerías necesarias
 library(dplyr)
 library(stringr)
@@ -40,10 +43,10 @@ process_directory <- function(dir_path, lab_name) {
 
 # Definir los directorios de los laboratorios
 lab_directories <- list(
-  Demengeot = "/home/paulinapg/tooling_up_systems_bio/RawData/Demengeot",
-  Howard = "/home/paulinapg/tooling_up_systems_bio/RawData/Howard",
-  HowardNew = "/home/paulinapg/tooling_up_systems_bio/RawData/HowardNew",
-  Vilanova = "/home/paulinapg/tooling_up_systems_bio/RawData/Vilanova"
+  Demengeot = paste0(dir, "/RawData/Demengeot"),
+  Howard = paste0(dir,"RawData/Howard"),
+  HowardNew = paste0(dir,"RawData/HowardNew"),
+  Vilanova = paste0(dir,"RawData/Vilanova")
 )
 
 # Procesar todos los directorios y combinarlos en una sola tabla
@@ -85,3 +88,5 @@ combined_data <- combined_data %>% dplyr::select("date_lab_plate", "Title", "Dat
 #Save data
 
 vroom::vroom_write(combined_data, "~/tooling_up_systems_bio/ToolingSystemsBiology/normalized_dictionary.csv")
+
+#END
