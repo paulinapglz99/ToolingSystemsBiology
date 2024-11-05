@@ -36,8 +36,13 @@ normalized_dictionary <- normalized_dictionary %>%
   ) %>%
   select(-stats, -file_path)  # Eliminar las columnas temporales
 
+
+# Agregar una nueva columna con la suma de (average + 2 * std_dev)
+normalized_dictionary <- normalized_dictionary %>%
+  mutate(threshold = average + 2 * std_dev)
+
 # Ver los primeros resultados
-print(normalized_dictionary)
-View(normalized_dictionary)
+
+write.csv(normalized_dictionary, "~/ToolingSystemsBiology/data_option2.csv")
 
 
