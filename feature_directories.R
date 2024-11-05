@@ -81,7 +81,7 @@ unique(combined_data$Date)
 
 combined_data$date_lab_plate <- paste(combined_data$Date, combined_data$Lab, combined_data$Plate, sep = "_")
 
-combined_data <- combined_data %>% dplyr::select("date_lab_plate", "Title", "Date", "Lab", "Plate")
+combined_data <- combined_data %>% dplyr::select("date_lab_plate", "file_name", "Date", "Lab", "Plate")
 
 # Cargar los datos nuevamente en caso de que combined_data no esté actualizado
 # library(dplyr)
@@ -106,14 +106,21 @@ calculate_last_row_stats <- function(filepath) {
 combined_data <- combined_data %>%
   rowwise() %>%
   mutate(
-    stats = list(calculate_last_row_stats(paste0(dir, "/RawData/", Lab, "/", Title, ".csv"))),
+    stats = list(calculate_last_row_stats(paste0(dir, "/RawData/", Lab, "/", file_name, ".csv"))),
     background_mean = stats$mean,
     background_SD = stats$sd
   ) %>%
   select(-stats) %>%
   ungroup()
 
-# Verifica los resultados
+# Add the threshold
+
+# Add the `threshold` column by calculating the value of 2 standard deviations over the background_mean
+
+combined_data <- combined_data %>%
+  mutate(threshold = background_mean + (2 * background_SD))
+
+# Verifica el resultado
 View(combined_data)
 
 #Save data
