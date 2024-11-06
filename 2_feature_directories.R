@@ -182,7 +182,6 @@ extract_titer <- function(filepath, threshold) {
   return(result)
 }
 
-
 # Crear una lista de filepaths completos utilizando la columna de `Lab` en `combined_data`
 
 filepaths <- map2(
@@ -195,6 +194,44 @@ filepaths <- map2(
 results <- map2(filepaths, combined_data$threshold, ~ extract_titer(.x, .y))
 
 # Combinar los resultados en un solo dataframe, agregando las columnas `file_name` y `threshold` de combined_data
-final_data <- bind_rows(results, .id = "file_name")
+final_data <- bind_rows(results, .id = "file_name") %>%
+  bind_cols(combined_data%>% select(-file_name))
 
-combined_data.f <- final_data %>% bind_cols(combined_data)
+
+# Usar map2_dfr para aplicar la función y unir los resultados en un solo dataframe
+final_data <- map2_dfr(filepaths, combined_data$threshold, ~ {
+  result <- extract_titer(.x, .y)
+  result$file_name <- basename(.x) # Agregar file_name como columna
+  result$threshold <- .y # Agregar threshold como columna
+  return(result)
+})
+
+# Usar map2_dfr para aplicar la función y unir los resultados en un solo dataframe
+final_data <- map2_dfr(filepaths, combined_data$threshold, ~ {
+  result <- extract_titer(.x, .y)
+  #result$file_name <- basename(.x) # Agregar file_name como columna
+  result$threshold <- .y # Agregar threshold como columna
+  return(result)
+})
+
+# Agregar las columnas adicionales de combined_data
+final_data <- final_data %>%
+  left_join(combined_data, by = "threshold")
+
+colnames(final_data)
+
+final_data <- final_data %>%
+  select(
+    # Columnas de la 18 a la 25 como primeras
+    FilePath, date_lab_plate, file_name, Date, Lab, Plate, background_mean, background_SD,
+    # Luego la columna `threshold`
+    threshold,
+    # Finalmente, las columnas restantes en el orden en que están
+    everything()
+  )
+
+#save table
+
+vroom::vroom_write(final_data, "~/tooling_up_systems_bio/ToolingSystemsBiology/final_data.csv")
+
+#END
