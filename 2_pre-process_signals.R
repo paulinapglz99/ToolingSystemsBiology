@@ -2,143 +2,51 @@
 
 setwd("~/tooling_up_systems_bio/ToolingSystemsBiology/")
 
+#Get directory in a string --- --- 
 dir <- getwd()
 
-# Cargar las librerías necesarias
+#Libraries --- ---
 pacman::p_load("dplyr", "purrr", "stringr")
 
-# Función para extraer la información de cada archivo
-# Modificación en la función extract_info para agregar el path
+
+#Functions --- --- 
+
+# Function to extract information from each file
+
 extract_info <- function(filepath, lab_name) {
-  # Obtener el nombre del archivo
-  file_name <- basename(filepath)
-  
-  # Extraer el identificador del archivo (file name sin la extensión)
-  title <- tools::file_path_sans_ext(file_name)
-  
-  # Extraer la fecha (primer componente, asumiendo que está al principio)
-  date <- str_extract(file_name, "\\d{4}-\\d{2}-\\d{2}")  # formato YYYY-MM-DD
+  file_name <- basename(filepath) #Get file_name
+  file_name <- tools::file_path_sans_ext(file_name) # Extract the file identifier (file name without the extension)
+  date <- str_extract(file_name, "\\d{4}-\\d{2}-\\d{2}")  # Get dates in YYYY-MM-DD
   if (is.na(date)) {
     date <- str_extract(file_name, "[A-Za-z]{3}\\s[A-Za-z]{3}\\s\\d{2}\\s\\d{4}")  # formato como 'Fri Aug 18 2023'
   }
-  
-  # Extraer el plato (P1, P2, plate_1, plate_2, etc.)
+  # Extract plate names (P1, P2, plate_1, plate_2, etc.)
   plate <- str_extract(file_name, "P\\d+|plate_\\d+")
-  
-  # Crear un data frame con la información, incluyendo el path del archivo
+  # Create a dataframe
   return(data.frame(
-    file_name = title,
+    file_name = file_name,
     Date = date,
     Lab = lab_name,
     Plate = plate,
-    FilePath = filepath,  # Añadir el path completo del archivo
+    #FilePath = filepath,
     stringsAsFactors = FALSE
   ))
 }
 
-# Usar la función actualizada en process_directory
-process_directory <- function(dir_path, lab_name) {
-  files <- list.files(dir_path, pattern = "\\.csv$", full.names = TRUE)
-  data <- do.call(rbind, lapply(files, extract_info, lab_name = lab_name))
-  return(data)
-}
-
-# # Definir los directorios de los laboratorios
-lab_directories <- list(
-  Demengeot = paste0(dir, "/RawData/Demengeot"),
-  Howard = paste0(dir,"/RawData/Howard"),
-  HowardNew = paste0(dir,"/RawData/HowardNew"),
-  Vilanova = paste0(dir,"/RawData/Vilanova")
-)
-
-# Procesar los directorios y combinar resultados
-combined_data <- do.call(rbind, lapply(names(lab_directories), function(lab) {
-  process_directory(lab_directories[[lab]], lab_name = lab)
-}))
-
-# 
-# # Procesar todos los directorios y combinarlos en una sola tabla
-# combined_data <- do.call(rbind, lapply(names(lab_directories), function(lab) {
-#   process_directory(lab_directories[[lab]], lab_name = lab)
-# }))
-
-# Ver los primeros resultados
-unique(combined_data$Plate)
-unique(combined_data$Date)
-
-# Normalizar los valores en la columna Plate
-combined_data$Plate <- ifelse(grepl("^P[0-9]+$", combined_data$Plate),
-                              paste0("plate_", sub("^P", "", combined_data$Plate)),
-                              combined_data$Plate)
-
-unique(combined_data$Plate)
-
-#Ahora quiero normalizar los datos 
-# Convertir fechas al formato "YYYY-MM-DD" usando diferentes formatos según el caso
-combined_data$Date <- ifelse(grepl("^[0-9]{4}-[0-9]{2}-[0-9]{2}$", combined_data$Date),
-                             as.Date(combined_data$Date, format = "%Y-%m-%d"),
-                             as.Date(combined_data$Date, format = "%a %b %d %Y"))
-
-# Convertir a Date para manejar los NA resultantes de conversiones fallidas
-combined_data$Date <- as.Date(combined_data$Date, origin = "1970-01-01")
-
-# Verificar el resultado
-unique(combined_data$Date)
-
-#unique identifier 
-
-combined_data$date_lab_plate <- paste(combined_data$Date, combined_data$Lab, combined_data$Plate, sep = "_")
-
-combined_data <- combined_data %>% dplyr::select("FilePath", "date_lab_plate", "file_name", "Date", "Lab", "Plate")
-
-# Cargar los datos nuevamente en caso de que combined_data no esté actualizado
-# library(dplyr)
-# combined_data <- #... tu código previo
-
-# Función para calcular media y desviación estándar de la última fila (sin contar "dilution")
+# Function to calculate mean and standard deviation of the last row (excluding “dilution”)
 calculate_last_row_stats <- function(filepath) {
-  # Leer el archivo CSV
-  data <- read.csv(filepath)
-  
-  # Obtener la última fila sin la columna 'dilution'
+  data <- read.csv(filepath) #Get data
+  #Get last row without the dilution column
   last_row <- data[nrow(data), -ncol(data)]
-  
-  # Calcular media y desviación estándar
+  #Calculate mean and sd
   mean_value <- mean(as.numeric(last_row), na.rm = TRUE)
   sd_value <- sd(as.numeric(last_row), na.rm = TRUE)
   
   return(list(mean = mean_value, sd = sd_value))
 }
 
-# Aplicar la función a cada archivo y actualizar `combined_data`
-combined_data <- combined_data %>%
-  rowwise() %>%
-  mutate(
-    stats = list(calculate_last_row_stats(paste0(dir, "/RawData/", Lab, "/", file_name, ".csv"))),
-    background_mean = stats$mean,
-    background_SD = stats$sd
-  ) %>%
-  select(-stats) %>%
-  ungroup()
 
-# Add the threshold
-
-# Add the `threshold` column by calculating the value of 2 standard deviations over the background_mean
-
-combined_data <- combined_data %>%
-  mutate(threshold = background_mean + (2 * background_SD))
-
-# Verifica el resultado
-View(combined_data)
-
-#Save data
-
-vroom::vroom_write(combined_data, "~/tooling_up_systems_bio/ToolingSystemsBiology/data.csv")
-#END
-
-#######################
-
-# Función para obtener el valor y la dilución asociado a cada columna que supera el threshold
+#Function to obtain the value and dilution associated with each column exceeding the threshold.
 extract_titer <- function(filepath, threshold) {
   # Leer el archivo CSV
   data <- read.csv(filepath)
@@ -182,7 +90,73 @@ extract_titer <- function(filepath, threshold) {
   return(result)
 }
 
-# Crear una lista de filepaths completos utilizando la columna de `Lab` en `combined_data`
+# Process directories function
+process_directory <- function(dir_path, lab_name) {
+  files <- list.files(dir_path, pattern = "\\.csv$", full.names = TRUE)
+  data <- do.call(rbind, lapply(files, extract_info, lab_name = lab_name))
+  return(data)
+}
+
+#Pre-process data --- ---
+
+# Define directories
+lab_directories <- list(
+  Demengeot = paste0(dir, "/RawData/Demengeot"),
+  Howard = paste0(dir,"/RawData/Howard"),
+  HowardNew = paste0(dir,"/RawData/HowardNew"),
+  Vilanova = paste0(dir,"/RawData/Vilanova")
+)
+
+#Process directorise and combine results
+combined_data <- do.call(rbind, lapply(names(lab_directories), function(lab) {
+  process_directory(lab_directories[[lab]], lab_name = lab)
+}))
+
+# Check plates and dates 
+unique(combined_data$Plate)
+unique(combined_data$Date)
+
+# Date and plate normalisation 
+combined_data$Plate <- ifelse(grepl("^P[0-9]+$", combined_data$Plate),
+                              paste0("plate_", sub("^P", "", combined_data$Plate)),
+                              combined_data$Plate)
+
+unique(combined_data$Plate)
+
+# Convert dates to “YYYYY-MM-DD” format using different formats as appropriate.
+combined_data$Date <- ifelse(grepl("^[0-9]{4}-[0-9]{2}-[0-9]{2}$", combined_data$Date),
+                             as.Date(combined_data$Date, format = "%Y-%m-%d"),
+                             as.Date(combined_data$Date, format = "%a %b %d %Y"))
+
+# Convert to date
+combined_data$Date <- as.Date(combined_data$Date, origin = "1970-01-01")
+
+#Check result
+unique(combined_data$Date)
+
+#Unique identifier 
+
+combined_data$date_lab_plate <- paste(combined_data$Date, combined_data$Lab, combined_data$Plate, sep = "_")
+
+combined_data <- combined_data %>% dplyr::select("file_name", "Date", "Lab", "Plate")
+
+#Calculate mean and sd 
+combined_data <- combined_data %>%
+  rowwise() %>%
+  mutate(
+    stats = list(calculate_last_row_stats(paste0(dir, "/RawData/", Lab, "/", file_name, ".csv"))),
+    background_mean = stats$mean,
+    background_SD = stats$sd
+  ) %>%
+  select(-stats) %>%
+  ungroup()
+
+# Add titre `threshold` column by calculating the value of 2 standard deviations over the background_mean
+
+combined_data <- combined_data %>%
+  mutate(threshold = background_mean + (2 * background_SD))
+
+#Create a list of complete filepaths using the `Lab` column in `combined_data`
 
 filepaths <- map2(
   combined_data$Lab, 
@@ -190,15 +164,14 @@ filepaths <- map2(
   ~ file.path(lab_directories[[.x]], paste0(.y, ".csv"))
 )
 
-# Aplicar la función `extract_titer` a cada archivo con su threshold correspondiente
+#Apply the `extract_titer` function to each file with a corresponding threshold
 results <- map2(filepaths, combined_data$threshold, ~ extract_titer(.x, .y))
 
-# Combinar los resultados en un solo dataframe, agregando las columnas `file_name` y `threshold` de combined_data
+#Combine the results in a single dataframe, adding the columns `file_name` and `threshold` of combined_data
 final_data <- bind_rows(results, .id = "file_name") %>%
-  bind_cols(combined_data%>% select(-file_name))
+  bind_cols(combined_data)
 
-
-# Usar map2_dfr para aplicar la función y unir los resultados en un solo dataframe
+#Use map2_dfr to apply the function and merge the results into a single dataframe
 final_data <- map2_dfr(filepaths, combined_data$threshold, ~ {
   result <- extract_titer(.x, .y)
   result$file_name <- basename(.x) # Agregar file_name como columna
@@ -206,15 +179,7 @@ final_data <- map2_dfr(filepaths, combined_data$threshold, ~ {
   return(result)
 })
 
-# Usar map2_dfr para aplicar la función y unir los resultados en un solo dataframe
-final_data <- map2_dfr(filepaths, combined_data$threshold, ~ {
-  result <- extract_titer(.x, .y)
-  #result$file_name <- basename(.x) # Agregar file_name como columna
-  result$threshold <- .y # Agregar threshold como columna
-  return(result)
-})
-
-# Agregar las columnas adicionales de combined_data
+#Add additional combined_data columns
 final_data <- final_data %>%
   left_join(combined_data, by = "threshold")
 
@@ -222,29 +187,14 @@ colnames(final_data)
 
 final_data <- final_data %>%
   select(
-    # Columnas de la 18 a la 25 como primeras
-    FilePath, date_lab_plate, file_name, Date, Lab, Plate, background_mean, background_SD,
-    # Luego la columna `threshold`
+    file_name.x, Date, Lab, Plate, background_mean, background_SD,
     threshold,
-    # Finalmente, las columnas restantes en el orden en que están
     everything()
   )
 
-#save table
+# Invert and make columns of average of references
 
-vroom::vroom_write(final_data, "final_data.csv")
-
-
-#Choose columns we need
-pigs <- pigs %>%
-  select(
-    FilePath, date_lab_plate, file_name, Date, Lab, Plate, background_mean, background_SD,
-    ends_with("_titre")
-  )
-
-# Normalize data
-
-pigs <- pigs %>%
+final_data <- final_data %>%
   mutate(
     across(
       ends_with("_titre"),
@@ -256,9 +206,9 @@ pigs <- pigs %>%
     Reference_average = rowMeans(select(., Reference1_titre, Reference2_titre), na.rm = TRUE)
   )
 
-#normalize
+#Normalize data by dividing everything by the average of references
 
-pigs <- pigs %>%
+final_data <- final_data %>%
   mutate(
     across(
       starts_with("inv_"),
@@ -267,11 +217,16 @@ pigs <- pigs %>%
     )
   )
 
-pigs_norm <- pigs %>%
+#only select normalized data
+
+final_data <- final_data %>%
   select(
-    FilePath, date_lab_plate, file_name, Date, Lab, Plate, background_mean, background_SD,
+    file_name.x, Date, Lab, Plate, background_mean, background_SD,
     ends_with("_norm")
   )
 
+#save table
+
+vroom::vroom_write(final_data, "final_data.csv")
 
 #END
