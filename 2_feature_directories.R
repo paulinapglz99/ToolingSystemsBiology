@@ -167,16 +167,34 @@ extract_titer <- function(filepath, threshold) {
     
   }
   result <- as.data.frame(result)
-  new_cols <- c("Reference1", "Reference2", "Control1", "Control2", "Infected1", "Infected2", "Infected3", "Infected4")
+  new_cols <- c(
+    "Reference1_val", "Reference1_titre",
+    "Reference2_val", "Reference2_titre",
+    "Control1_val", "Control1_titre",
+    "Control2_val", "Control2_titre",
+    "Infected1_val", "Infected1_titre",
+    "Infected2_val", "Infected2_titre",
+    "Infected3_val", "Infected3_titre",
+    "Infected4_val", "Infected4_titre"
+  )
+  
   colnames(result) <- new_cols
   return(result)
 }
 
 
 # Crear una lista de filepaths completos utilizando la columna de `Lab` en `combined_data`
+
 filepaths <- map2(
   combined_data$Lab, 
   combined_data$file_name, 
-  ~ file.path(lab_directories[[.x]], .y)
+  ~ file.path(lab_directories[[.x]], paste0(.y, ".csv"))
 )
 
+# Aplicar la función `extract_titer` a cada archivo con su threshold correspondiente
+results <- map2(filepaths, combined_data$threshold, ~ extract_titer(.x, .y))
+
+# Combinar los resultados en un solo dataframe, agregando las columnas `file_name` y `threshold` de combined_data
+final_data <- bind_rows(results, .id = "file_name")
+
+combined_data.f <- final_data %>% bind_cols(combined_data)
