@@ -5,8 +5,7 @@ setwd("~/tooling_up_systems_bio/ToolingSystemsBiology/")
 dir <- getwd()
 
 # Cargar las librerías necesarias
-library(dplyr)
-library(stringr)
+pacman::p_load("dplyr", "purrr", "stringr")
 
 # Función para extraer la información de cada archivo
 # Modificación en la función extract_info para agregar el path
@@ -136,3 +135,48 @@ View(combined_data)
 
 vroom::vroom_write(combined_data, "~/tooling_up_systems_bio/ToolingSystemsBiology/data.csv")
 #END
+
+#######################
+
+# Función para obtener el valor y la dilución asociado a cada columna que supera el threshold
+extract_titer <- function(filepath, threshold) {
+  # Leer el archivo CSV
+  data <- read.csv(filepath)
+  
+  # Crear una lista para almacenar los resultados por columna
+  result <- list()
+  
+  # Recorremos cada columna
+  for (col_name in names(data)[1:8]) {
+    # Extraer la columna de valores y la de diluciones
+    values <- data[[col_name]]
+    dilutions <- data$dilution
+    
+    # Identificar el primer valor que esté por encima del threshold
+    above_threshold_idx <- max(which(values > threshold))
+    
+    if (!is.na(above_threshold_idx)) {
+      # Guardamos el valor y su dilución asociada
+      result[[paste0(col_name, "_value")]] <- values[above_threshold_idx]
+      result[[paste0(col_name, "_dilution")]] <- dilutions[above_threshold_idx]
+    } else {
+      # Si no hay ningún valor superior al threshold, almacenamos NA
+      result[[paste0(col_name, "_value")]] <- NA
+      result[[paste0(col_name, "_dilution")]] <- NA
+    }
+    
+  }
+  result <- as.data.frame(result)
+  new_cols <- c("Reference1", "Reference2", "Control1", "Control2", "Infected1", "Infected2", "Infected3", "Infected4")
+  colnames(result) <- new_cols
+  return(result)
+}
+
+
+# Crear una lista de filepaths completos utilizando la columna de `Lab` en `combined_data`
+filepaths <- map2(
+  combined_data$Lab, 
+  combined_data$file_name, 
+  ~ file.path(lab_directories[[.x]], .y)
+)
+
