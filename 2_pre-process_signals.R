@@ -8,7 +8,6 @@ dir <- getwd()
 #Libraries --- ---
 pacman::p_load("dplyr", "purrr", "stringr")
 
-
 #Functions --- --- 
 
 # Function to extract information from each file
@@ -215,14 +214,6 @@ final_data <- final_data %>%
       ~ . / Reference_average,  # Divide cada columna inv_ por Reference_average
       .names = "{.col}_norm"  # Crea nuevas columnas con el sufijo "_norm"
     )
-  )
-
-#only select normalized data
-
-final_data <- final_data %>%
-  select(
-    file_name.x, Date, Lab, Plate, background_mean, background_SD,
-    ends_with("_norm")
   )
 
 #save table

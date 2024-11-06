@@ -11,7 +11,7 @@ pacman::p_load("tidyverse", "ggplot2", "stringr")
 
 pigs <- vroom::vroom(file= "final_data.csv")
 
-#Plot
+#Plot histogram
 
 # Convierte todas las columnas que terminan en "_norm" a un formato largo
 pigs_long <- pigs %>%
@@ -35,5 +35,8 @@ ggplot(pigs_long, aes(x = value)) +
   labs(title = "Histograma combinado de todas las columnas _norm", x = "Valor", y = "Frecuencia") +
   theme_minimal()
 
+f<- function(x,k1,k2,k3) {
+  return(k1+k2*x/(k3+x))
+}
 
 
