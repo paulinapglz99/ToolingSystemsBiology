@@ -232,6 +232,6 @@ final_data <- final_data %>%
 
 #save table
 
-vroom::vroom_write(final_data, "~/tooling_up_systems_bio/ToolingSystemsBiology/final_data.csv")
+vroom::vroom_write(final_data, "final_data.csv")
 
 #END
