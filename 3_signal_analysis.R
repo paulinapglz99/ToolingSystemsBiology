@@ -11,47 +11,6 @@ pacman::p_load("tidyverse", "ggplot2", "stringr")
 
 pigs <- vroom::vroom(file= "final_data.csv")
 
-#see colnames
-colnames(pigs)
-
-#Choose columns we need
-pigs <- pigs %>%
-  select(
-    FilePath, date_lab_plate, file_name, Date, Lab, Plate, background_mean, background_SD,
-    ends_with("_titre")
-  )
-
-# Normalize data
-
-pigs <- pigs %>%
-  mutate(
-    across(
-      ends_with("_titre"),
-      ~ 1 / .,  # Calcula el inverso de cada valor
-      .names = "inv_{.col}"  # Crea una nueva columna con el prefijo "inv_"
-    )
-  ) %>%
-  mutate(
-    Reference_average = rowMeans(select(., Reference1_titre, Reference2_titre), na.rm = TRUE)
-  )
-
-#normalize
-
-pigs <- pigs %>%
-  mutate(
-    across(
-      starts_with("inv_"),
-      ~ . / Reference_average,  # Divide cada columna inv_ por Reference_average
-      .names = "{.col}_norm"  # Crea nuevas columnas con el sufijo "_norm"
-    )
-  )
-
-pigs_norm <- pigs %>%
-  select(
-    FilePath, date_lab_plate, file_name, Date, Lab, Plate, background_mean, background_SD,
-    ends_with("_norm")
-  )
-
 #Plot
 
 # Convierte todas las columnas que terminan en "_norm" a un formato largo
@@ -75,5 +34,6 @@ ggplot(pigs_long, aes(x = value)) +
   geom_histogram(bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
   labs(title = "Histograma combinado de todas las columnas _norm", x = "Valor", y = "Frecuencia") +
   theme_minimal()
+
 
 
