@@ -191,30 +191,44 @@ final_data <- final_data %>%
     everything()
   )
 
-# Invert and make columns of average of references
+# Invert
 
 final_data <- final_data %>%
   mutate(
     across(
       ends_with("_titre"),
-      ~ 1 / .,  # Calcula el inverso de cada valor
+      ~ 1 / .,  # calculates the inverse of each value
       .names = "inv_{.col}"  # Crea una nueva columna con el prefijo "inv_"
     )
-  ) %>%
-  mutate(
-    Reference_average = rowMeans(select(., Reference1_titre, Reference2_titre), na.rm = TRUE)
   )
 
-#Normalize data by dividing everything by the average of references
+#and make columns of average of references
 
-final_data <- final_data %>%
-  mutate(
-    across(
-      starts_with("inv_"),
-      ~ . / Reference_average,  # Divide cada columna inv_ por Reference_average
-      .names = "{.col}_norm"  # Crea nuevas columnas con el sufijo "_norm"
-    )
-  )
+# final_data <- final_data %>%
+#   mutate(
+#     Reference_average = rowMeans(select(., Reference1_titre, Reference2_titre), na.rm = TRUE)
+#   )
+
+final_data$Reference_average <- (final_data$Reference1_titre + final_data$Reference2_titre) / 2
+
+#Normalize data by dividing all inverted values by the average of references
+
+# final_data <- final_data %>%
+#   mutate(
+#     across(
+#       starts_with("inv_"),
+#       ~ . / Reference_average,  # Divide each column inv_ by Reference_average
+#       .names = "{.col}_norm"  # Create new columns with the suffix “_norm”.
+#     )
+#   )
+
+# Identificar las columnas que empiezan con "inv_"
+inv_columns <- grep("^inv_", names(final_data), value = TRUE)
+
+# Crear las nuevas columnas dividiendo por Reference_average
+for (col in inv_columns) {
+  final_data[[paste0(col, "_norm")]] <- final_data[[col]] / final_data$Reference_average
+}
 
 #save table
 
