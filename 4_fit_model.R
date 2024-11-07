@@ -21,7 +21,7 @@ f <- function(x,c,a,b) {
 #Funcion de tangente
 
 g <- function(x, a, b, c) {
-  (c - 1) + (a / 2) * atan((x / a) - b)
+  (c - 1) + (a / 2) * atan((x -b / a))
 }
 
 plot(x = ref1$log10dil,
@@ -43,30 +43,22 @@ plot(x = ref1$log10dil,
 #c es el background, es el valor de la senal de la ultima fila
 
 #x es la dilucion 
-v <- f(x = ref1$log10dil, a = ref1$signal[1], b =ref1$log10dil[7], c = ref1$signal[12]
-           )
+
+v <- f(x = ref1$log10dil, a = ref1$signal[1], b =ref1$log10dil[7], c = ref1$signal[12])
 
 plot(v)
 
 #50 to 100 points
 
+#Fit arctan line
 
-# Gráfico inicial de ref1
-plot(x = ref1$log10dil,
-     y = ref1$signal,
-     xlab = "Log10 dilution",
-     ylab = "Signal",
-     pch = 16,
-     cex = 1,
-     type = "b",
-     lwd = 2)
+xvtan= ref1$log10dil
+avtan= ref1$signal[1]
+bvtan = ref1$log10dil[7]
+cvtan = ref1$signal[12]
 
-# Añadir la línea de 'v' al gráfico en color azul
-lines(x = -(ref1$log10dil),  # Usamos la misma dilución de ref1 para el eje x
-      y = v,              # Valores de 'v' para el eje y
-      col = "blue",       # Color de la línea
-      type = "b",         # Conectar los puntos con líneas
-      lwd = 2,            # Ancho de la línea
-      pch = 16)           # Tipo de punto sólido
+xsvtan =  seq(-10, 10, length.out = 100)
+y_values = 
 
-
+vtan <- g(x = ref1$log10dil, a = ref1$signal[1], b =ref1$log10dil[7], c = ref1$signal[12])
+plot(vtan)
