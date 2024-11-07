@@ -13,8 +13,8 @@ michaelis_menten <- function(dilution, Vmax, Km, c) {
 }
 
 # Definir la función de ajuste con arcTangente, con el parámetro c (ruido) +1
-arctangent <- function(dilution, a, b, c) {
-  (c-1) + (a) * atan(dilution * b)  # Agregar c - 1 al principio
+arctangent <- function(dilution, a, b, c, d) {
+  (c-1) + (a/2) * atan((dilution - b)/d)  # Agregar c - 1 al principio
 }
 
 # Ajuste no lineal de Michaelis-Menten, agregando el parámetro c

@@ -193,14 +193,14 @@ final_data <- final_data %>%
 
 # Invert
 
-final_data <- final_data %>%
-  mutate(
-    across(
-      ends_with("_titre"),
-      ~ 1 / .,  # calculates the inverse of each value
-      .names = "inv_{.col}"  # Crea una nueva columna con el prefijo "inv_"
-    )
-  )
+#final_data <- final_data %>%
+  # mutate(
+  #   across(
+  #     ends_with("_titre"),
+  #     ~ 1 / .,  # calculates the inverse of each value
+  #     .names = "inv_{.col}"  # Crea una nueva columna con el prefijo "inv_"
+  #   )
+  # )
 
 #and make columns of average of references
 
@@ -209,7 +209,7 @@ final_data <- final_data %>%
 #     Reference_average = rowMeans(select(., Reference1_titre, Reference2_titre), na.rm = TRUE)
 #   )
 
-final_data$Reference_average <- (final_data$Reference1_titre + final_data$Reference2_titre) / 2
+#final_data$Reference_average <- (final_data$Reference1_titre + final_data$Reference2_titre) / 2
 
 #Normalize data by dividing all inverted values by the average of references
 
@@ -229,6 +229,43 @@ inv_columns <- grep("^inv_", names(final_data), value = TRUE)
 for (col in inv_columns) {
   final_data[[paste0(col, "_norm")]] <- final_data[[col]] / final_data$Reference_average
 }
+
+######CUACK
+# Paso 1: Pivotamos columnas terminadas en `_val` y `_titre` para obtener `val` y `titre`
+final_data_long <- final_data %>%
+  pivot_longer(
+    cols = ends_with("_val") | ends_with("_titre"),  # Selecciona columnas que terminan en _val o _titre
+    names_to = c("sample", ".value"),                  # "type" indica el tipo (Reference1, Control1, etc.)
+    names_sep = "_"
+  )
+
+# Paso 3: Seleccionamos columnas en el orden deseado
+final_data_long <- final_data_long %>%
+  select(file_name.x, Date, Lab, Plate, background_mean, background_SD, threshold, 
+         sample, val, titre)
+
+final_data_long <- final_data_long %>% 
+  filter(!is.na(val))
+
+final_data_long$inv <- 1/final_data_long$titre
+
+
+final_data_long <- final_data_long %>%
+  mutate(group = rep(1:(n()/8), each = 8)) # Asignar un número de grupo cada 8 filas
+
+# Calcular el promedio de `inv` para `Reference1` y `Reference2` dentro de cada grupo
+reference_avg <- final_data_long %>%
+  filter(sample %in% c("Reference1", "Reference2")) %>% # Filtrar solo las referencias
+  group_by(group) %>%                                   # Agrupar por cada grupo de 8 filas
+  summarise(reference_average = mean(inv, na.rm = TRUE)) # Calcular el promedio de `inv` en cada grupo
+
+# Unir el promedio de referencia con el dataframe original
+final_data_long <- final_data_long %>%
+  left_join(reference_avg, by = "group") %>% # Unir usando la columna "group"
+  select(-group)                             # Opcional: eliminar la columna "group" si ya no es necesaria
+
+final_data_long <- final_data_long %>%
+  mutate(norm = inv / reference_average)
 
 #save table
 
