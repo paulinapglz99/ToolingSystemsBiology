@@ -5,7 +5,7 @@ dirnames <- dir()
 dirnames[1]
 
 #
-x<- vroom::vroom("/home/paulinapg/tooling_up_systems_bio/RawData/Demengeot/2023-01-11 plate_1.csv")
+x<- vroom::vroom("/home/paulinapg/tooling_up_systems_bio/RawData/HowardNew/Fri Apr 19 2024 (P1).csv")
 
 # Pivot data
 x_long <- x %>%
@@ -26,6 +26,74 @@ ggplot(x_long, aes(x = dilution, y = value, color = sample)) +
   scale_x_log10() + #logaritmic
   labs(x = "Dilution", y = "Signal", title = "Dilution vs Signal") +
   theme_minimal()
+
+
+# Definir colores para cada grupo
+group_colors <- c(
+  Control = "blue",
+  Infected = "red",
+  Reference = "green"
+)
+
+# Asignar colores según el prefijo de cada muestra
+x_long <- x_long %>%
+  mutate(group = case_when(
+    grepl("^Control", sample) ~ "Control",
+    grepl("^Infected", sample) ~ "Infected",
+    grepl("^Reference", sample) ~ "Reference"
+  ))
+
+# Graficar
+howard_new.p <- ggplot(x_long, aes(x = dilution, y = value, color = group, group = sample)) +
+  geom_line() +
+  geom_point() +
+  scale_x_log10() +
+  scale_color_manual(values = group_colors) +
+  labs(x = "log10Dilution", y = "Signal", title = "Dilution vs Signal by Sample Group - Howard new", subtitle = "Fri Apr 19 2024 (P1)") +
+  theme_minimal()
+howard_new.p
+
+#Howard old lol
+
+p <-  vroom::vroom("/home/paulinapg/tooling_up_systems_bio/RawData/Howard/Wed Sep 13 2023 (P1).csv")
+
+# Pivot data
+p_long <- p %>%
+  pivot_longer(cols = -dilution, names_to = "sample", values_to = "value")
+
+p_long <- p_long %>%
+  mutate(group = case_when(
+    grepl("^Control", sample) ~ "Control",
+    grepl("^Infected", sample) ~ "Infected",
+    grepl("^Reference", sample) ~ "Reference"
+  ))
+
+
+# Graficar
+howard.p <- ggplot(p_long, aes(x = dilution, y = value, color = group, group = sample)) +
+  geom_line() +
+  geom_point() +
+  scale_x_log10() +
+  scale_color_manual(values = group_colors) +
+  labs(x = "log10Dilution", y = "Signal", title = "Dilution vs Signal by Sample Group- Howard", subtitle = "Wed Sep 13 2023 (P1)") +
+  theme_minimal()
+howard.p
+
+png("howard_and_howardnew_dilutionsgrid.png", width = 20, height = 20, units = "cm", res = 300)
+gridExtra::grid.arrange(howard.p, howard_new.p, top = "")
+dev.off()
+
+# Establecer el dispositivo gráfico PNG con la resolución deseada
+
+# Generar y guardar el arreglo de gráficos
+gridExtra::grid.arrange(
+  howard.p, howard_new.p,
+  top = textGrob("sg", gp = gpar(fontsize = 15, fontface = "bold"))
+)
+
+# Cerrar el dispositivo gráfico
+dev.off()
+
 
 #Scatterplot
 

@@ -252,8 +252,56 @@ for (folder in datafolders) {
     
   }
   
+  
 }
+
+
+folder 
+fbasename
+c
+nrow(sera_titre_table)
+plot(sera_titre_table$f_titre,sera_titre_table$g_titre,pch=16,col=rgb(0,0,0,.5))
 
 # Clean the table by eliminating the first row full of NA
 sera_titre_table<-sera_titre_table[-1,]
 
+setwd("~/tooling_up_systems_bio/Data/")
+write.csv(sera_titre_table,"Sera titre table.csv")
+
+inrex<-grep("R",sera_titre_table$serum)
+infex<-grep("I",sera_titre_table$serum)
+inbex<-grep("C",sera_titre_table$serum)
+length(index)
+length(inbex)
+
+
+plot(log10(sera_titre_table$f_titre[infex]),pch=16,col=rgb(0,0,0,0.5),ylab="Serum titre (ru)")
+points(log10(sera_titre_table$f_titre[inbex]),pch=16,col=rgb(1,0,0,0.5) )
+
+
+plot(ecdf(log10(sera_titre_table$f_titre[inrex])),col="blue",
+     xlab="Serum titre (ru)",ylab="CDF",xlim=c(-7,2),main="Serum titre estimated by fitting function f")
+lines(ecdf(log10(sera_titre_table$f_titre[inbex])),col="brown")
+lines(ecdf(log10(sera_titre_table$f_titre[infex])),col="black")
+
+plot(ecdf(log10(sera_titre_table$g_titre[inrex])),col="blue",
+     xlab="Serum titre (ru)",ylab="CDF",xlim=c(-7,2),main="Serum titre estimated by fitting function g")
+lines(ecdf(log10(sera_titre_table$g_titre[inbex])),col="brown")
+lines(ecdf(log10(sera_titre_table$g_titre[infex])),col="black")
+
+plot(log10(sera_titre_table$f_titre[inbex]),log10(sera_titre_table$g_titre[inbex]),
+     pch=16,col="brown",xlab="Titre | f",ylab="Titre | g",main="Negative Pre-epidemic Sera")
+abline(a=0,b=1)
+
+plot(log10(sera_titre_table$f_titre[infex]),log10(sera_titre_table$g_titre[infex]),
+     pch=16,col=rgb(0,0,0,0.5),xlab="Titre | f",ylab="Titre | g",main="XSFV Infected Sera")
+abline(a=0,b=1)
+
+plot(log10(sera_titre_table$f_titre[inrex]),log10(sera_titre_table$g_titre[inrex]),
+     pch=16,col=rgb(0,0,1,0.5),xlab="Titre | f",ylab="Titre | g",main="Reference Highresponders Serum Pool")
+abline(a=0,b=1)
+
+labcolors<-c("lightblue","red","brown","darkgreen")
+plot(log10(sera_titre_table$g_d),col=labcolors[as.factor(sera_titre_table$lab)])
+
+require(Rtsne)
